@@ -61,7 +61,7 @@ document.querySelector('#app').innerHTML = `
 
         <!-- Mobile menu button -->
         <div class="md:hidden">
-          <button class="">
+          <button id="openMenu" class="">
             <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -70,5 +70,47 @@ document.querySelector('#app').innerHTML = `
       </div>
     </div>
   </nav>
+
+  <!-- Mobile menu Background -->
+  <div id="menuBg" class="bg-opacity-50 fixed inset-0 hidden bg-black"></div>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="fixed top-0 right-0 z-50 h-full w-64 translate-x-full transform bg-white shadow-lg transition-transform duration-300 ease-in-out">
+    <div class="flex items-center justify-between border-b p-4">
+      <span class="text-lg font-semibold">Menú</span>
+      <button id="closeMenu">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <nav class="space-y-4 p-4 font-medium">
+      <a href="#" class="block hover:text-blue-600">Partner Program</a>
+      <a href="#" class="block hover:text-blue-600">Español</a>
+      <a href="#" class="block hover:text-blue-600">Sobre Nosotros</a>
+      <a href="#" class="block rounded-full border-2 border-primary-00 px-4 py-2 text-center text-primary-00 transition hover:bg-blue-50">
+      <span class="pb-1.25">Comprar ahora</span>
+      </a>
+    </nav>
+  </div>
+</div>
 </div>
 `
+
+const openBtn = document.getElementById('openMenu');
+const closeBtn = document.getElementById('closeMenu');
+const menu = document.getElementById('mobileMenu');
+const bg = document.getElementById('menuBg');
+
+openBtn.addEventListener('click', () => {
+  menu.classList.remove('translate-x-full');
+  bg.classList.remove('hidden');
+});
+
+closeBtn.addEventListener('click', closeMenu);
+bg.addEventListener('click', closeMenu);
+
+function closeMenu() {
+  menu.classList.add('translate-x-full');
+  bg.classList.add('hidden');
+}
