@@ -85,8 +85,6 @@ document.querySelector('#app').innerHTML = `
       </button>
     </div>
     <nav class="space-y-4 p-4 font-medium">
-      <a href="#" class="block hover:text-blue-600">Partner Program</a>
-      <a href="#" class="block hover:text-blue-600">Español</a>
       <a href="#" class="block hover:text-blue-600">Sobre Nosotros</a>
       <a href="#" class="block rounded-full border-2 border-primary-00 px-4 py-2 text-center text-primary-00 transition hover:bg-blue-50">
       <span class="pb-1.25">Comprar ahora</span>
