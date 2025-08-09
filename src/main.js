@@ -156,7 +156,53 @@ document.querySelector('#app').innerHTML = `
 
   <!-- Main page content -->
   <main class="page-body">
-    <p>body</p>
+    <!-- Hero -->
+    <section class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-3xl font-bold text-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+        <div class="mt-6 p-4 bg-gray-100 rounded">
+          <h3 class="uppercase font-bold text-md text-opacities-dark-05">Referencia</h3>
+          <h2 class="uppercase text-neutral-40 text-sm">Modelo X</h2>
+          <div class="border border-primary-60-light my-3"></div>
+          <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative flex items-center justify-center w-full max-w-3xl overflow-hidden">
+        <!-- Carousel wrapper -->
+        <div id="carousel" class="flex transition-transform duration-500">
+          <div class="w-full flex-shrink-0">
+            <img src="https://picsum.photos/id/100/800/400" class="w-full h-64 object-cover" alt="Slide 1">
+          </div>
+          <div class="w-full flex-shrink-0">
+            <img src="https://picsum.photos/id/108/800/400" class="w-full h-64 object-cover" alt="Slide 2">
+          </div>
+          <div class="w-full flex-shrink-0">
+            <img src="https://picsum.photos/id/31/800/400" class="w-full h-64 object-cover" alt="Slide 3">
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button id="prev" class="absolute text-primary-medium top-1/2 left-4 -translate-y-1/2">
+          &#10094;
+        </button>
+        <button id="next" class="absolute text-primary-medium top-1/2 right-4 -translate-y-1/2">
+          &#10095;
+        </button>
+      </div>
+
+    </section>
+
+    
   </main>
 
   <!-- Footer -->
@@ -317,3 +363,23 @@ document.addEventListener('click', (event) => {
     menuDdpFooterLanguage.classList.add('hidden');
   }
 });
+
+// Carousel
+const carousel = document.getElementById('carousel');
+const slides = carousel.children;
+const totalSlides = slides.length;
+let index = 0;
+
+document.getElementById('next').addEventListener('click', () => {
+  index = (index + 1) % totalSlides;
+  updateCarousel();
+});
+
+document.getElementById('prev').addEventListener('click', () => {
+  index = (index - 1 + totalSlides) % totalSlides;
+  updateCarousel();
+});
+
+function updateCarousel() {
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+}

@@ -6,11 +6,16 @@
   --color-primary-00 : #22509B;
   --color-primary-dark: #14203F;
   --color-primary-medium: #283f7e;
-  --color-text-light: #cecfd2;
+  --color-light: #cecfd2;
   --color-neutral-05: #f3f3f4;
   --color-secondary-60-light: #bde8fa;
   --color-secondary-90-light: #eff9fe;
   --color-logo-red: #ee3c60;
+  --color-heading: #324f9e;
+  --color-opacities-dark-05: #0A1020;
+  --color-neutral-40: #9D9FA6;
+  --color-neutral-60: #6C7079;
+  --color-primary-60-light: #ADB9D8;
 
   --text-xxs: 0.63rem;
 }
@@ -22,14 +27,14 @@
 html,
 body {
   box-sizing: border-box;
-  height: 100%;
+  min-height: 100%;
   padding: 0;
   margin: 0;
 }
 
 .wrapper {
   box-sizing: border-box;
-  min-height: 100%;
+  min-height: 100vh;
 
   display: flex;
   flex-direction: column;
