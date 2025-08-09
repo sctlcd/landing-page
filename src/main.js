@@ -24,7 +24,7 @@ document.querySelector('#app').innerHTML = `
           <div class="relative group z-10">
             <button id="dropdownBtn" class="flex items-center pr-4 hover:text-blue-600 focus:outline-none">
               Español
-              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <svg class="ml-2 mt-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
@@ -56,7 +56,7 @@ document.querySelector('#app').innerHTML = `
           <div class="relative group">
             <button class="px-4 py-2 flex items-center hover:text-blue-600 text-md md:text-lg lg:text-2xl focus:outline-none">
               Sobre Nosotros
-              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <svg class="ml-2 mt-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
