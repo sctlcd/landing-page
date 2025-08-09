@@ -32,7 +32,7 @@ body {
   margin: 0;
 }
 
-.wrapper {
+/* .wrapper {
   box-sizing: border-box;
   min-height: 100vh;
 
@@ -59,4 +59,15 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
 }
