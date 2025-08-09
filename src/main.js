@@ -28,7 +28,7 @@ document.querySelector('#app').innerHTML = `
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div id="languages" class="absolute right-0 w-32 bg-white rounded-xl shadow-md inset-shadow-xs opacity-100 group-hover:opacity-100 invisible group-hover:visible transition-opacity py-3">
+            <div id="language-desktop" class="absolute right-0 w-32 bg-white rounded-xl shadow-md inset-shadow-xs opacity-100 group-hover:opacity-100 invisible group-hover:visible transition-opacity py-3">
               <a href="#" class="block px-6 py-2 text-sm hover:bg-blue-50">Español</a>
               <a href="#" class="block px-6 py-2 text-sm hover:bg-blue-50">Inglés</a>
               <a href="#" class="block px-6 py-2 text-sm hover:bg-blue-50">Francés</a>
@@ -114,14 +114,14 @@ document.querySelector('#app').innerHTML = `
 
       <!-- Language Dropdown (Mobile) -->
       <div>
-        <button class="w-full flex justify-between items-center hover:text-blue-600" onclick="toggleDropdown('languagesMobile')">
+        <button id="dropdownBtnMobileLanguage" class="w-full flex justify-between items-center hover:text-blue-600">
           Español
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
             viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div id="languagesMobile" class="hidden pl-4 space-y-1 mt-2">
+        <div id="dropdownMenuMobileLanguage" class="hidden pl-4 space-y-1 mt-2">
           <a href="#" class="block text-sm hover:text-blue-600">Español</a>
           <a href="#" class="block text-sm hover:text-blue-600">Inglés</a>
           <a href="#" class="block text-sm hover:text-blue-600">Francés</a>
@@ -131,14 +131,14 @@ document.querySelector('#app').innerHTML = `
 
       <!-- Sobre Nosotros Dropdown (Mobile) -->
       <div>
-        <button class="w-full flex justify-between items-center hover:text-blue-600" onclick="toggleDropdown('aboutMobile')">
+        <button id="dropdownBtnMobileAbout" class="w-full flex justify-between items-center hover:text-blue-600">
           Sobre Nosotros
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
             viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div id="aboutMobile" class="hidden pl-4 space-y-1 mt-2">
+        <div id="dropdownMenuMobileAbout" class="hidden pl-4 space-y-1 mt-2">
           <a href="#" class="block text-sm hover:text-blue-600">Historia</a>
           <a href="#" class="block text-sm hover:text-blue-600">Valores</a>
           <a href="#" class="block text-sm hover:text-blue-600">Equipo</a>
@@ -163,7 +163,7 @@ document.querySelector('#app').innerHTML = `
   <footer class="footer w-full font-sans">
     
     <!-- Top section -->
-    <div class="grid grid-cols-1 items-start gap-12 bg-[#2E4482] px-8 py-14 text-white md:grid-cols-3 lg:px-28">
+    <div class="grid grid-cols-1 items-start gap-12 bg-primary-medium px-8 py-14 text-white md:grid-cols-3 lg:px-28">
       
       <!-- Column 1 -->
       <div>
@@ -209,7 +209,7 @@ document.querySelector('#app').innerHTML = `
     </div>
 
     <!-- Bottom section -->
-    <div class="flex flex-col items-center justify-between bg-[#121F3D] px-8 py-4 text-xs text-white md:flex-row lg:px-28">
+    <div class="flex flex-col items-center justify-between bg-primary-dark px-8 py-4 text-xs text-white md:flex-row lg:px-28">
       
     <!-- Left -->
       <div class="block mt-3">
@@ -244,7 +244,7 @@ document.querySelector('#app').innerHTML = `
         </button>
 
         <!-- Dropdown Menu (Opens Up) -->
-        <div id="dropdownMenu" class="absolute right-0 bottom-full mb-2 hidden w-28 rounded-xl bg-primary-dark py-3 opacity-100 shadow-md inset-shadow-xs transition-opacity group-hover:visible group-hover:opacity-100">
+        <div id="dropdownMenuFooterLanguage" class="absolute right-0 bottom-full mb-2 hidden w-28 rounded-xl bg-primary-dark py-3 opacity-100 shadow-md inset-shadow-xs transition-opacity group-hover:visible group-hover:opacity-100">
           <a href="#" class="block px-6 py-2 text-xs hover:bg-gray-500">Español</a>
           <a href="#" class="block px-6 py-2 text-xs hover:bg-gray-500">Inglés</a>
           <a href="#" class="block px-6 py-2 text-xs hover:bg-gray-500">Francés</a>
@@ -281,9 +281,39 @@ function toggleDropdown(id) {
   document.getElementById(id).classList.toggle('hidden');
 }
 
+// Mobile Language dropdown toggle onclick
+const btnDdpMobileLanguage = document.getElementById('dropdownBtnMobileLanguage');
+const menuDdpMobileLanguage = document.getElementById('dropdownMenuMobileLanguage');
+
+btnDdpMobileLanguage.addEventListener('click', () => {
+  menuDdpMobileLanguage.classList.toggle('hidden');
+});
+
+// Close if clicked outside
+document.addEventListener('click', (event) => {
+  if (!btnDdpMobileLanguage.contains(event.target) && !menuDdpMobileLanguage.contains(event.target)) {
+    menuDdpMobileLanguage.classList.add('hidden');
+  }
+});
+
+// Mobile About dropdown toggle onclick
+const btnDdpMobileAbout = document.getElementById('dropdownBtnMobileAbout');
+const menuDdpMobileAbout = document.getElementById('dropdownMenuMobileAbout');
+
+btnDdpMobileAbout.addEventListener('click', () => {
+  menuDdpMobileAbout.classList.toggle('hidden');
+});
+
+// Close if clicked outside
+document.addEventListener('click', (event) => {
+  if (!btnDdpMobileAbout.contains(event.target) && !menuDdpMobileAbout.contains(event.target)) {
+    menuDdpMobileAbout.classList.add('hidden');
+  }
+});
+
 // Footer Language dropdown toggle onclick
 const btnDdpFooterLanguage = document.getElementById('dropdownBtnFooterLanguage');
-const menuDdpFooterLanguage = document.getElementById('dropdownMenu');
+const menuDdpFooterLanguage = document.getElementById('dropdownMenuFooterLanguage');
 
 btnDdpFooterLanguage.addEventListener('click', () => {
   menuDdpFooterLanguage.classList.toggle('hidden');
