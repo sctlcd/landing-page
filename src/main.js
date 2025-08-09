@@ -22,7 +22,7 @@ document.querySelector('#app').innerHTML = `
 
           <!-- Language Dropdown -->
           <div class="relative group z-10">
-            <button id="dropdownBtn" class="flex items-center pr-4 hover:text-blue-600 focus:outline-none">
+            <button id="desktop-language-selector" class="flex items-center pr-4 hover:text-blue-600 focus:outline-none">
               Español
               <svg class="ml-2 mt-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -45,7 +45,7 @@ document.querySelector('#app').innerHTML = `
         <!-- Left: Logo -->
         <div class="flex items-center space-x-2">
           <!-- Icon (placeholder box) -->
-          <div class="h-7 w-5 md:h-8 md:w-6 lg:h-10 lg:w-7 rounded bg-red-500"></div>
+          <div class="h-7 w-5 md:h-8 md:w-6 lg:h-10 lg:w-7 rounded bg-logo-red"></div>
           <span class="font-bold text-3xl md:text-4xl lg:text-5xl">Logo</span>
         </div>
 
@@ -94,7 +94,7 @@ document.querySelector('#app').innerHTML = `
   <!-- Mobile menu -->
   <div id="mobileMenu" class="fixed top-0 right-0 z-50 h-full w-64 translate-x-full transform bg-white shadow-lg transition-transform duration-300 ease-in-out">
     
-    <!-- Headedr mobile menu -->
+    <!-- Header mobile menu -->
     <div class="flex items-center justify-between border-b p-4">
       <span class="text-lg font-semibold">Menú</span>
       <button id="closeMenu">
@@ -160,30 +160,138 @@ document.querySelector('#app').innerHTML = `
   </main>
 
   <!-- Footer -->
-  <footer class="footer">footer</footer>
+  <footer class="footer w-full font-sans">
+    
+    <!-- Top section -->
+    <div class="grid grid-cols-1 items-start gap-12 bg-[#2E4482] px-8 py-14 text-white md:grid-cols-3 lg:px-28">
+      
+      <!-- Column 1 -->
+      <div>
+        <h3 class="mb-4 text-sm font-bold">Sobre nosotros</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-sm underline hover:text-gray-300">Acerca de Nosotros</a></li>
+          <li><a href="#" class="text-sm underline hover:text-gray-300">Partner Program</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div>
+        <h3 class="mb-4 text-sm font-bold">Software</h3>
+        <a href="#" class="mb-4 block text-sm underline hover:text-gray-300">Aplicación móvil</a>
+        <div class="flex flex-col gap-3">
+          <a href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_(iOS).svg" alt="App Store" class="h-10" />
+          </a>
+          <a href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-10" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 3 (Logo) -->
+      <div class="flex flex-col items-center justify-center md:items-start md:justify-start">
+        <div class="flex items-center space-x-2">
+          <div class="flex items-center space-x-2">
+            <!-- Icon (placeholder box) -->
+            <div class="h-7 w-5 md:h-8 md:w-6 lg:h-10 lg:w-7 rounded bg-logo-red"></div>
+            <span class="font-bold text-3xl md:text-4xl lg:text-5xl">Logo</span>
+          </div>
+        </div>
+        <div class="mt-7">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="30" viewBox="0 0 256 256" xml:space="preserve">
+            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(45.02412451361867 45.024124513618645) scale(1.83 1.83)">
+              <path d="M 1.48 29.91 h 18.657 v 60.01 H 1.48 V 29.91 z M 10.809 0.08 c 5.963 0 10.809 4.846 10.809 10.819 c 0 5.967 -4.846 10.813 -10.809 10.813 C 4.832 21.712 0 16.866 0 10.899 C 0 4.926 4.832 0.08 10.809 0.08" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+              <path d="M 31.835 29.91 h 17.89 v 8.206 h 0.255 c 2.49 -4.72 8.576 -9.692 17.647 -9.692 C 86.514 28.424 90 40.849 90 57.007 V 89.92 H 71.357 V 60.737 c 0 -6.961 -0.121 -15.912 -9.692 -15.912 c -9.706 0 -11.187 7.587 -11.187 15.412 V 89.92 H 31.835 V 29.91 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom section -->
+    <div class="flex flex-col items-center justify-between bg-[#121F3D] px-8 py-4 text-xs text-white md:flex-row lg:px-28">
+      
+    <!-- Left -->
+      <div class="block mt-3">
+        <div class="mb-3 md:mb-0 font-bold">© Copyright 2025</div>
+        <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 mt-3">
+          <a href="#" class="hover:underline">Política de privacidad</a>
+          <span>|</span>
+          <a href="#" class="hover:underline">Política de cookies</a>
+          <span>|</span>
+          <a href="#" class="hover:underline">Configuración de cookies</a>
+          <span>|</span>
+          <a href="#" class="hover:underline">Aviso legal</a>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <!-- <div id="footer-language-selector" class="mt-3 flex cursor-pointer items-center space-x-1 md:mt-0" onclick="toggleDropdown('languagesMobile')">
+        <span>Español</span>
+        <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div> -->
+
+      <!-- Footer Language selector - Dropdown Wrapper -->
+      <div class="relative inline-block text-left">
+        <!-- Trigger Button -->
+        <button id="dropdownBtnFooterLanguage" class="inline-flex cursor-pointer items-center hover:underline">
+          <span>Español</span>
+          <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <!-- Dropdown Menu (Opens Up) -->
+        <div id="dropdownMenu" class="absolute right-0 bottom-full mb-2 hidden w-28 rounded-xl bg-primary-dark py-3 opacity-100 shadow-md inset-shadow-xs transition-opacity group-hover:visible group-hover:opacity-100">
+          <a href="#" class="block px-6 py-2 text-xs hover:bg-gray-500">Español</a>
+          <a href="#" class="block px-6 py-2 text-xs hover:bg-gray-500">Inglés</a>
+          <a href="#" class="block px-6 py-2 text-xs hover:bg-gray-500">Francés</a>
+          <a href="#" class="block px-6 py-2 text-xs hover:bg-gray-500">Portugués</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
 </div>
 `
 
 // Mobile Menu toggle
 const openBtn = document.getElementById('openMenu');
 const closeBtn = document.getElementById('closeMenu');
-const menu = document.getElementById('mobileMenu');
-const bg = document.getElementById('menuBg');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileBg = document.getElementById('menuBg');
 
 openBtn.addEventListener('click', () => {
-  menu.classList.remove('translate-x-full');
-  bg.classList.remove('hidden');
+  mobileMenu.classList.remove('translate-x-full');
+  mobileBg.classList.remove('hidden');
 });
 
 closeBtn.addEventListener('click', closeMenu);
-bg.addEventListener('click', closeMenu);
+mobileBg.addEventListener('click', closeMenu);
 
 function closeMenu() {
-  menu.classList.add('translate-x-full');
-  bg.classList.add('hidden');
+  mobileMenu.classList.add('translate-x-full');
+  mobileBg.classList.add('hidden');
 }
 
 // Mobile dropdown toggle
 function toggleDropdown(id) {
   document.getElementById(id).classList.toggle('hidden');
 }
+
+// Footer Language dropdown toggle onclick
+const btnDdpFooterLanguage = document.getElementById('dropdownBtnFooterLanguage');
+const menuDdpFooterLanguage = document.getElementById('dropdownMenu');
+
+btnDdpFooterLanguage.addEventListener('click', () => {
+  menuDdpFooterLanguage.classList.toggle('hidden');
+});
+
+// Close if clicked outside
+document.addEventListener('click', (event) => {
+  if (!btnDdpFooterLanguage.contains(event.target) && !menuDdpFooterLanguage.contains(event.target)) {
+    menuDdpFooterLanguage.classList.add('hidden');
+  }
+});

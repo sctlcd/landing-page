@@ -4,6 +4,13 @@
 @theme {
   --color-dark: #232836;
   --color-primary-00 : #22509B;
+  --color-primary-dark: #14203F;
+  --color-primary-medium: #283f7e;
+  --color-text-light: #cecfd2;
+  --color-neutral-05: #f3f3f4;
+  --color-secondary-60-light: #bde8fa;
+  --color-secondary-90-light: #eff9fe;
+  --color-logo-red: #ee3c60;
 
   --text-xxs: 0.63rem;
 }
@@ -47,5 +54,4 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
 }
