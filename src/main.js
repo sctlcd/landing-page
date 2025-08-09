@@ -1,9 +1,9 @@
 import './style.css'
 
 document.querySelector('#app').innerHTML = `
-<div class="page">
+<div class="wrapper">
   <!-- navbar -->
-  <nav class="shadow-md">
+  <nav class="page-header shadow-md">
 
     <!-- navbar header -->
     <div class="shadow-sm">
@@ -153,7 +153,14 @@ document.querySelector('#app').innerHTML = `
       </div>
     </nav>
   </div>
-</div>
+
+  <!-- Main page content -->
+  <main class="page-body">
+    <p>body</p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">footer</footer>
 </div>
 `
 
