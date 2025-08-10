@@ -3,11 +3,11 @@ import './style.css'
 document.querySelector('#app').innerHTML = `
 <div class="wrapper">
   <!-- navbar -->
-  <nav class="page-header shadow-md">
+  <nav class="page-header shadow-md font-medium">
 
     <!-- navbar header -->
     <div class="shadow-sm">
-      <div class="hidden md:flex h-10 items-center justify-end font-medium md:text-lg lg:text-2xl">
+      <div class="hidden md:flex h-10 items-center justify-end md:text-xl/6">
         <!-- Right: Links and actions -->
         <div class="flex items-center space-x-8">
           <!-- Partner Program with Icon -->
@@ -24,7 +24,7 @@ document.querySelector('#app').innerHTML = `
           <div class="relative group z-10">
             <button id="desktop-language-selector" class="flex items-center pr-4 hover:text-blue-600 focus:outline-none">
               Español
-              <svg class="ml-2 mt-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
@@ -40,7 +40,7 @@ document.querySelector('#app').innerHTML = `
     </div>
 
     <!-- navbar content -->
-    <div class="px-4 sm:px-6 lg:px-12 2xl:px-16 font-medium">
+    <div class="px-4 sm:px-6 lg:px-12 2xl:px-16">
       <div class="flex h-23 items-center justify-between">
         <!-- Left: Logo -->
         <div class="flex items-center space-x-2">
@@ -54,9 +54,9 @@ document.querySelector('#app').innerHTML = `
 
           <!-- Sobre Nosotros Dropdown -->
           <div class="relative group">
-            <button class="px-4 py-2 flex items-center hover:text-blue-600 text-md md:text-lg lg:text-2xl focus:outline-none">
+            <button class="px-4 py-2 flex items-center hover:text-blue-600 md:text-xl/6 focus:outline-none">
               Sobre Nosotros
-              <svg class="ml-2 mt-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
@@ -68,12 +68,12 @@ document.querySelector('#app').innerHTML = `
           </div>
 
           <!-- CTA Button -->
-          <a href="#" class="inline-flex items-center rounded-full border lg:border-2 border-primary-00 pl-4.5 md:text-xxs/5  lg:text-xs/6 pr-2 text-primary-00 transition hover:bg-blue-50 z-0">
-            <span class="pr-0.75 pt-0.75 pb-1.25">Comprar ahora</span>
-            <svg class="ml-1 h-3 w-3 lg:h-4 lg:w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" transform="rotate(-90)">
+          <button href="#" class="inline-flex items-center rounded-full border md:border-2 border-primary-00 pl-7 md:text-sm pr-3 py-1 text-primary-00 transition hover:bg-blue-50 z-0">
+            <span class="mr-1">Comprar ahora</span>
+            <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" transform="rotate(-90)">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
             </svg>
-          </a>
+          </button>
         </div>
 
         <!-- Mobile menu button -->
@@ -159,20 +159,20 @@ document.querySelector('#app').innerHTML = `
     <!-- Hero -->
     <section class="max-w-7xl mx-auto px-24 py-24 grid md:grid-cols-2 gap-6 items-center">
       <div class="space-y-15">
-        <h1 class="text-3xl font-bold text-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+        <h1 class="text-18/20 text-heading font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
         <div class="p-12 bg-gray-100 rounded">
-          <h3 class="mb-2 uppercase font-bold text-md text-opacities-dark-05">Referencia</h3>
-          <h2 class="mb-4 uppercase text-neutral-40 text-sm">Modelo X</h2>
-          <div class="border border-primary-60-light"></div>
-          <ul class="mt-4 hhhlist-disc list-inside text-sm space-y-1">
-            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
-            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
-            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
-            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
-            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
-            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
-            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
-            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+          <h3 class="text-xl/6 font-medium mb-2 uppercase text-opacities-dark-05">Referencia</h3>
+          <h2 class="text-lg/5 font-normal uppercase text-neutral-40">Modelo X</h2>
+          <div class="border border-primary-60-light my-4"></div>
+          <ul class="list-disc list-inside text-sm space-y-1">
+            <li class="text-neutral-40 "><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
           </ul>
         </div>
       </div>
@@ -205,12 +205,16 @@ document.querySelector('#app').innerHTML = `
           </button>
           </button>
         </div>
-        
       </div>
-
     </section>
 
-    
+    <!-- Lorem ipsum passage -->
+    <section class="mx-auto max-w-6xl px-24 py-12 text-center">
+      <h2 class="text-18/20 font-medium text-heading">Lorem Ipsum passage</h2>
+      <p class="my-24 text-primary-40-light font-medium text-12-5/15 ">The standard used since the 1500s</p>
+      <p class="font-normal text-2xl/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
   </main>
 
   <!-- Footer -->
