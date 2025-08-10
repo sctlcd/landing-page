@@ -7,7 +7,7 @@ document.querySelector('#app').innerHTML = `
 
     <!-- navbar header -->
     <div class="shadow-sm">
-      <div class="hidden md:flex h-10 items-center justify-end font-medium md:text-lg lg:text-2xl">
+      <div class="hidden md:flex h-10 items-center justify-end font-medium md:text-lg/6">
         <!-- Right: Links and actions -->
         <div class="flex items-center space-x-8">
           <!-- Partner Program with Icon -->
@@ -24,7 +24,7 @@ document.querySelector('#app').innerHTML = `
           <div class="relative group z-10">
             <button id="desktop-language-selector" class="flex items-center pr-4 hover:text-blue-600 focus:outline-none">
               Español
-              <svg class="ml-2 mt-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
@@ -54,9 +54,9 @@ document.querySelector('#app').innerHTML = `
 
           <!-- Sobre Nosotros Dropdown -->
           <div class="relative group">
-            <button class="px-4 py-2 flex items-center hover:text-blue-600 text-md md:text-lg lg:text-2xl focus:outline-none">
+            <button class="px-4 py-2 flex items-center hover:text-blue-600 text-md md:text-lg focus:outline-none">
               Sobre Nosotros
-              <svg class="ml-2 mt-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
@@ -205,12 +205,16 @@ document.querySelector('#app').innerHTML = `
           </button>
           </button>
         </div>
-        
       </div>
-
     </section>
 
-    
+    <!-- Lorem ipsum passage -->
+    <section class="mx-auto max-w-3xl px-24 py-12 text-center">
+      <h2 class="text-2xl font-bold text-blue-600">Lorem Ipsum passage</h2>
+      <p class="my-24"text-blue-400">The standard used since the 1500s</p>
+      <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
   </main>
 
   <!-- Footer -->
