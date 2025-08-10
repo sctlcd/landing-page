@@ -367,8 +367,73 @@ document.querySelector('#app').innerHTML = `
         <p class="my-24 text-primary-40-light font-medium text-12-5/15 ">The standard used since the 1500s</p>
         <p class="font-normal text-2xl/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
-    </div>
+ 
+      <section class="mb-24 max-w-7xl py-24 mx-auto">
+        <!-- Heading -->
+        <h2 class="text-center font-medium text-12-5/15 text-primary-40-light mb-24 mx-auto">
+          Tabla comparativa
+        </h2>
 
+        <div class="mb-6">
+          <!-- Table -->
+          <div class="overflow-x-auto">
+            <table class="min-w-sm border-collapse mx-auto">
+              <thead>
+                <tr class="bg-primary-00 text-neutral-05 text-9-5/11 font-semibold">
+                  <th class="text-left p-6 rounded-tl-lg">Beneficios</th>
+                  <th class="p-6">Silver</th>
+                  <th class="p-6">Gold</th>
+                  <th class="p-6">Platinum</th>
+                  <th class="p-6 rounded-tr-lg">Diamond</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white">
+                <!-- Row 1 -->
+                <tr class="border-b border-primary-60-light">
+                  <td class="my-3 py-3 px-3 text-left">Beneficio A</td>
+                  <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
+                  <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v<v/td>
+                  <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v<v/td>
+                  <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
+                </tr>
+                <!-- Row 2 -->
+                <tr class="border-b border-primary-60-light">
+                  <td class="my-3 py-3 px-3 text-left">Beneficio B</td>
+                  <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
+                  <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
+                  <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
+                  <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
+                </tr>
+                <!-- Row 3 -->
+                <tr class="border-b border-primary-60-light">
+                  <td class="my-3 py-3 px-3 text-left">Beneficio C</td>
+                  <td class="text-center my-3 py-3 px-3 text-red-500"><i class="text-red-500"></i>x</td>
+                  <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
+                  <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
+                  <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
+                </tr>
+                <!-- Row 4 -->
+                <tr class="border-b border-primary-60-light">
+                  <td class="my-3 py-3 px-3 text-left">Beneficio D</td>
+                  <td class="text-center my-3 py-3 px-3 text-red-500"><i class="text-red-500"></i>x</td>
+                  <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
+                  <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
+                  <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Notes -->
+          <div class="mt-6 space-y-3">
+            <p class="font-medium text-xl/6 text-neutral-60">(1) Sed ut perspiciatis unde omnis.</p>
+            <p class="font-medium text-xl/6 text-neutral-60">(2) Sed ut perspiciatis unde omnis.</p>
+            <p class="font-medium text-xl/6 text-neutral-60">(3) Sed ut perspiciatis unde omnis.</p>
+          </div>
+        </div>
+      </section>
+  
+    </div>
   </main>
 
   <!-- Footer -->
