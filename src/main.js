@@ -209,10 +209,10 @@ document.querySelector('#app').innerHTML = `
     </section>
 
     <!-- Lorem ipsum passage -->
-    <section class="mx-auto max-w-3xl px-24 py-12 text-center">
-      <h2 class="text-2xl font-bold text-blue-600">Lorem Ipsum passage</h2>
-      <p class="my-24"text-blue-400">The standard used since the 1500s</p>
-      <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <section class="mx-auto max-w-6xl px-24 py-12 text-center">
+      <h2 class="text-18/20 font-medium text-heading">Lorem Ipsum passage</h2>
+      <p class="my-24 text-primary-40-light font-medium text-12-5/15 ">The standard used since the 1500s</p>
+      <p class="font-normal text-2xl/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
 
   </main>
