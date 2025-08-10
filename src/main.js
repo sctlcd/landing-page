@@ -157,14 +157,14 @@ document.querySelector('#app').innerHTML = `
   <!-- Main page content -->
   <main class="page-body">
     <!-- Hero -->
-    <section class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center">
-      <div>
+    <section class="max-w-7xl mx-auto px-24 py-24 grid md:grid-cols-2 gap-6 items-center">
+      <div class="space-y-15">
         <h1 class="text-3xl font-bold text-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-        <div class="mt-6 p-4 bg-gray-100 rounded">
-          <h3 class="uppercase font-bold text-md text-opacities-dark-05">Referencia</h3>
-          <h2 class="uppercase text-neutral-40 text-sm">Modelo X</h2>
-          <div class="border border-primary-60-light my-3"></div>
-          <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+        <div class="p-12 bg-gray-100 rounded">
+          <h3 class="mb-2 uppercase font-bold text-md text-opacities-dark-05">Referencia</h3>
+          <h2 class="mb-4 uppercase text-neutral-40 text-sm">Modelo X</h2>
+          <div class="border border-primary-60-light"></div>
+          <ul class="mt-4 hhhlist-disc list-inside text-sm space-y-1">
             <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
             <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
             <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
@@ -187,17 +187,25 @@ document.querySelector('#app').innerHTML = `
             <img src="https://picsum.photos/id/108/800/400" class="w-full h-64 object-cover" alt="Slide 2">
           </div>
           <div class="w-full flex-shrink-0">
-            <img src="https://picsum.photos/id/31/800/400" class="w-full h-64 object-cover" alt="Slide 3">
+            <img src="https://picsum.photos/id/58/800/400" class="w-full h-64 object-cover" alt="Slide 3">
           </div>
         </div>
 
-        <!-- Controls -->
-        <button id="prev" class="absolute text-primary-medium top-1/2 left-4 -translate-y-1/2">
-          &#10094;
-        </button>
-        <button id="next" class="absolute text-primary-medium top-1/2 right-4 -translate-y-1/2">
-          &#10095;
-        </button>
+        <!-- Carousel controls -->
+        <div class="text-primary-medium">
+          <button id="prev" class="absolute top-1/2 left-4 -translate-y-1/2">
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" transform="rotate(90)">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <button id="next" class="absolute top-1/2 right-4 -translate-y-1/2">
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" transform="rotate(-90)">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          </button>
+        </div>
+        
       </div>
 
     </section>
