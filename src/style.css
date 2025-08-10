@@ -17,10 +17,15 @@
   --color-neutral-60: #6C7079;
   --color-primary-60-light: #ADB9D8;
   --color-primary-40-light: #8495C5;
+  --color-primary-20-light: #5B72B1;
 
   --text-xxs: 0.63rem;
   --text-18: 67.34px;
   --text-12-5: 50.52px;
+
+  --font-roboto-condensed: 'Roboto Condensed', sans-serif;
+
+  /* --font- */
 }
 
 * {
