@@ -156,7 +156,61 @@ document.querySelector('#app').innerHTML = `
 
   <!-- Main page content -->
   <main class="page-body">
-    <p>body</p>
+    <!-- Hero -->
+    <section class="max-w-7xl mx-auto px-24 py-24 grid md:grid-cols-2 gap-6 items-center">
+      <div class="space-y-15">
+        <h1 class="text-3xl font-bold text-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+        <div class="p-12 bg-gray-100 rounded">
+          <h3 class="mb-2 uppercase font-bold text-md text-opacities-dark-05">Referencia</h3>
+          <h2 class="mb-4 uppercase text-neutral-40 text-sm">Modelo X</h2>
+          <div class="border border-primary-60-light"></div>
+          <ul class="mt-4 hhhlist-disc list-inside text-sm space-y-1">
+            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            <li class="text-neutral-40"><span class="text-neutral-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative flex items-center justify-center w-full max-w-3xl overflow-hidden">
+        <!-- Carousel wrapper -->
+        <div id="carousel" class="flex transition-transform duration-500">
+          <div class="w-full flex-shrink-0">
+            <img src="https://picsum.photos/id/100/800/400" class="w-full h-64 object-cover" alt="Slide 1">
+          </div>
+          <div class="w-full flex-shrink-0">
+            <img src="https://picsum.photos/id/108/800/400" class="w-full h-64 object-cover" alt="Slide 2">
+          </div>
+          <div class="w-full flex-shrink-0">
+            <img src="https://picsum.photos/id/58/800/400" class="w-full h-64 object-cover" alt="Slide 3">
+          </div>
+        </div>
+
+        <!-- Carousel controls -->
+        <div class="text-primary-medium">
+          <button id="prev" class="absolute top-1/2 left-4 -translate-y-1/2">
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" transform="rotate(90)">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <button id="next" class="absolute top-1/2 right-4 -translate-y-1/2">
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" transform="rotate(-90)">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          </button>
+        </div>
+        
+      </div>
+
+    </section>
+
+    
   </main>
 
   <!-- Footer -->
@@ -317,3 +371,23 @@ document.addEventListener('click', (event) => {
     menuDdpFooterLanguage.classList.add('hidden');
   }
 });
+
+// Carousel
+const carousel = document.getElementById('carousel');
+const slides = carousel.children;
+const totalSlides = slides.length;
+let index = 0;
+
+document.getElementById('next').addEventListener('click', () => {
+  index = (index + 1) % totalSlides;
+  updateCarousel();
+});
+
+document.getElementById('prev').addEventListener('click', () => {
+  index = (index - 1 + totalSlides) % totalSlides;
+  updateCarousel();
+});
+
+function updateCarousel() {
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+}
