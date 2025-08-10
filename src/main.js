@@ -389,32 +389,32 @@ document.querySelector('#app').innerHTML = `
               </thead>
               <tbody class="bg-white">
                 <!-- Row 1 -->
-                <tr class="border-b border-primary-60-light">
-                  <td class="my-3 py-3 px-3 text-left">Beneficio A</td>
+                <tr class="border-b border-primary-60-light text-7/9.5 font-semibold">
+                  <td class="my-3 py-3 px-3 text-left text-neutral-60">Beneficio A</td>
                   <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
                   <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v<v/td>
                   <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v<v/td>
                   <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
                 </tr>
                 <!-- Row 2 -->
-                <tr class="border-b border-primary-60-light">
-                  <td class="my-3 py-3 px-3 text-left">Beneficio B</td>
+                <tr class="border-b border-primary-60-light text-7/9.5 font-semibold">
+                  <td class="my-3 py-3 px-3 text-left text-neutral-60">Beneficio B</td>
                   <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
                   <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
                   <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
                   <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
                 </tr>
                 <!-- Row 3 -->
-                <tr class="border-b border-primary-60-light">
-                  <td class="my-3 py-3 px-3 text-left">Beneficio C</td>
+                <tr class="border-b border-primary-60-light text-7/9.5 font-semibold">
+                  <td class="my-3 py-3 px-3 text-left text-neutral-60">Beneficio C</td>
                   <td class="text-center my-3 py-3 px-3 text-red-500"><i class="text-red-500"></i>x</td>
                   <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
                   <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
                   <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
                 </tr>
                 <!-- Row 4 -->
-                <tr class="border-b border-primary-60-light">
-                  <td class="my-3 py-3 px-3 text-left">Beneficio D</td>
+                <tr class="border-b border-primary-60-light text-7/9.5 font-semibold">
+                  <td class="my-3 py-3 px-3 text-left text-neutral-60">Beneficio D</td>
                   <td class="text-center my-3 py-3 px-3 text-red-500"><i class="text-red-500"></i>x</td>
                   <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
                   <td class="text-center my-3 py-3 px-3 text-green-500"><i class="text-green-500"></i>v</td>
@@ -425,10 +425,10 @@ document.querySelector('#app').innerHTML = `
           </div>
 
           <!-- Notes -->
-          <div class="mt-6 space-y-3">
-            <p class="font-medium text-xl/6 text-neutral-60">(1) Sed ut perspiciatis unde omnis.</p>
-            <p class="font-medium text-xl/6 text-neutral-60">(2) Sed ut perspiciatis unde omnis.</p>
-            <p class="font-medium text-xl/6 text-neutral-60">(3) Sed ut perspiciatis unde omnis.</p>
+          <div class="mt-6 space-y-3 font-medium text-xl/6 text-neutral-60">
+            <p>(1) Sed ut perspiciatis unde omnis.</p>
+            <p>(2) Sed ut perspiciatis unde omnis.</p>
+            <p>(3) Sed ut perspiciatis unde omnis.</p>
           </div>
         </div>
       </section>
