@@ -156,65 +156,140 @@ document.querySelector('#app').innerHTML = `
 
   <!-- Main page content -->
   <main class="page-body">
-    <!-- Hero -->
-    <section class="max-w-7xl mx-auto px-24 py-24 grid md:grid-cols-2 gap-6 items-center">
-      <div class="space-y-15">
-        <h1 class="text-18/20 text-heading font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-        <div class="p-12 bg-gray-100 rounded">
-          <h3 class="text-xl/6 font-medium mb-2 uppercase text-opacities-dark-05">Referencia</h3>
-          <h2 class="text-lg/5 font-normal uppercase text-neutral-40">Modelo X</h2>
-          <div class="border border-primary-60-light my-4"></div>
-          <ul class="list-disc list-inside text-sm space-y-1">
-            <li class="text-neutral-40 "><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
-            <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
-            <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
-            <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
-            <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
-            <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
-            <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
-            <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="relative flex items-center justify-center w-full max-w-3xl overflow-hidden">
-        <!-- Carousel wrapper -->
-        <div id="carousel" class="flex transition-transform duration-500">
-          <div class="w-full flex-shrink-0">
-            <img src="https://picsum.photos/id/100/800/400" class="w-full h-64 object-cover" alt="Slide 1">
-          </div>
-          <div class="w-full flex-shrink-0">
-            <img src="https://picsum.photos/id/108/800/400" class="w-full h-64 object-cover" alt="Slide 2">
-          </div>
-          <div class="w-full flex-shrink-0">
-            <img src="https://picsum.photos/id/58/800/400" class="w-full h-64 object-cover" alt="Slide 3">
+    <div class="main-content">
+      <!-- Hero -->
+      <section class="mb-24 max-w-7xl mx-auto px-24 py-24 grid md:grid-cols-2 gap-6 items-center">
+        <div class="space-y-15">
+          <h1 class="text-18/20 text-heading font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+          <div class="p-12 bg-gray-100 rounded">
+            <h3 class="text-xl/6 font-medium mb-2 uppercase text-opacities-dark-05">Referencia</h3>
+            <h2 class="text-lg/5 font-normal uppercase text-neutral-40">Modelo X</h2>
+            <div class="border border-primary-60-light my-4"></div>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li class="text-neutral-40 "><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+              <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+              <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+              <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+              <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+              <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+              <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+              <li class="text-neutral-40"><span class="text-neutral-60 font-normal text-base/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
+            </ul>
           </div>
         </div>
 
-        <!-- Carousel controls -->
-        <div class="text-primary-medium">
-          <button id="prev" class="absolute top-1/2 left-4 -translate-y-1/2">
-            <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" transform="rotate(90)">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <button id="next" class="absolute top-1/2 right-4 -translate-y-1/2">
-            <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" transform="rotate(-90)">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          </button>
+        <div class="relative flex items-center justify-center w-full max-w-3xl overflow-hidden">
+          <!-- Carousel wrapper -->
+          <div id="carousel" class="flex transition-transform duration-500">
+            <div class="w-full flex-shrink-0">
+              <img src="https://picsum.photos/id/100/800/400" class="w-full h-64 object-cover" alt="Slide 1">
+            </div>
+            <div class="w-full flex-shrink-0">
+              <img src="https://picsum.photos/id/108/800/400" class="w-full h-64 object-cover" alt="Slide 2">
+            </div>
+            <div class="w-full flex-shrink-0">
+              <img src="https://picsum.photos/id/58/800/400" class="w-full h-64 object-cover" alt="Slide 3">
+            </div>
+          </div>
+
+          <!-- Carousel controls -->
+          <div class="text-primary-medium">
+            <button id="prev" class="absolute top-1/2 left-4 -translate-y-1/2">
+              <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" transform="rotate(90)">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <button id="next" class="absolute top-1/2 right-4 -translate-y-1/2">
+              <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" transform="rotate(-90)">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lorem ipsum passage -->
+      <section class="mb-24 mx-auto max-w-6xl px-24 py-12 text-center">
+        <h2 class="text-18/20 font-medium text-heading">Lorem Ipsum passage</h2>
+        <p class="my-24 text-primary-40-light font-medium text-12-5/15 ">The standard used since the 1500s</p>
+        <p class="font-normal text-2xl/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+
+      <!-- Ventajas -->
+      <section class="mb-24 p-24">
+      <div class="max-w-5xl mx-auto text-center">
+        <!-- Title -->
+        <h2 class="mb-24 font-medium text-12-5/15 text-primary-40-light">Ventajas</h2>
+
+        <!-- Icons Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-8 gap-y-12 gap-x-16 justify-center">
+          
+          <!-- Item -->
+          <div class="flex flex-col items-center text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAADH0lEQVR4AexUbUiTURQ+WMw/FmUrEvsyKBRBZUSMsvygREqSPgiUoC2i/sgII4QIIxFBIpEQooi0COtHGYuMMAhXUqtgaRGFRJNqFGUf2CCMoPYcvKMFsffyUtyNM3bee+9z77n3nOc592bklzX/TGfLoDT/SYKpLrAoKAoazoCUqOECJQ1PFExKkeELREHDBUoaniiYlCLDF4iChguUNDxRMIGiFByIgikoWkLIomACHSk4EAX/FK31QC09GzwSN4yxBq3Cr/U0ANKy7o6d8T0f32wm365KcrvyaPDSfsYVprVpbLG2grk5sygYekkF5YfZDh3106aqYiopXEjexh7GJr//4ABj+1v+z82eQZf7Q+xftL6Fjp+5RXt3rKWh+y8YO31hiMrcyy3vpxZqJ4hA3K6lzCrYBcsri5cQkupqrWM80zGdA1SH+GJq3PU3MREgA31gah57ZGVl0taNLvZHBQDDWQXLchjbXVdKgeCocrHcaiWIQx2x4E+cCzCr4VfjzDJOW7wgm1o6+xnHGCWLFgY1Lvof0p76NdTgqSD0gWEONs85Ew01tfXF/b3bVxOSnoh+YwwK1qwr4rLlxRY/WgkGQ2Gqqu8kFVzk7RcCyzjryfMIXR0YQZc+fPpKKGUeTH3gAzzy7nPcf2qK/cq3HeMWGNY552RRNDpJV24MA6KxNx/J4ZhGigwGLXy0EkR5oSzRYm/cu+Gnr+nByBjlLXJyCUJl9JE81iiDoiADhr7C0fpiJTzQu4/VgX/u/NkUuDfKRG2uLsESwjVA5/34BBrLppUgFMKlbz+4he8FTsEj8zve3eFh5oFjHoaEqisK6VTvHbbK0vyERwjqQln4wtAHdvL8bSYOrzNI7bv+KPbAhbGlZdNKELsicPWC1ni6ALH9Dcck5lZsaOMSBBmratsJCWBOmbfxLN817I0+cFwJlC4w9bIC1zHtBHU2N2GtJGiCCnZiEAVtsGeEqyhohAw2ghAFbZBnhKsoaIQMNoIQBW2QZ4SrKGiEDDaCEAVtkGeEqyhohAw2ghAFbZBnhKso+N9k+EcHpb2CvwAAAP//UKJw/QAAAAZJREFUAwDVaoRg8PVQJAAAAABJRU5ErkJggg==" alt="Odd zonas" class="w-8 h-8 mb-2">
+            <span class="font-medium text-base/5 text-neutral-60">640 zonas</span>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAADH0lEQVR4AexUbUiTURQ+WMw/FmUrEvsyKBRBZUSMsvygREqSPgiUoC2i/sgII4QIIxFBIpEQooi0COtHGYuMMAhXUqtgaRGFRJNqFGUf2CCMoPYcvKMFsffyUtyNM3bee+9z77n3nOc592bklzX/TGfLoDT/SYKpLrAoKAoazoCUqOECJQ1PFExKkeELREHDBUoaniiYlCLDF4iChguUNDxRMIGiFByIgikoWkLIomACHSk4EAX/FK31QC09GzwSN4yxBq3Cr/U0ANKy7o6d8T0f32wm365KcrvyaPDSfsYVprVpbLG2grk5sygYekkF5YfZDh3106aqYiopXEjexh7GJr//4ABj+1v+z82eQZf7Q+xftL6Fjp+5RXt3rKWh+y8YO31hiMrcyy3vpxZqJ4hA3K6lzCrYBcsri5cQkupqrWM80zGdA1SH+GJq3PU3MREgA31gah57ZGVl0taNLvZHBQDDWQXLchjbXVdKgeCocrHcaiWIQx2x4E+cCzCr4VfjzDJOW7wgm1o6+xnHGCWLFgY1Lvof0p76NdTgqSD0gWEONs85Ew01tfXF/b3bVxOSnoh+YwwK1qwr4rLlxRY/WgkGQ2Gqqu8kFVzk7RcCyzjryfMIXR0YQZc+fPpKKGUeTH3gAzzy7nPcf2qK/cq3HeMWGNY552RRNDpJV24MA6KxNx/J4ZhGigwGLXy0EkR5oSzRYm/cu+Gnr+nByBjlLXJyCUJl9JE81iiDoiADhr7C0fpiJTzQu4/VgX/u/NkUuDfKRG2uLsESwjVA5/34BBrLppUgFMKlbz+4he8FTsEj8zve3eFh5oFjHoaEqisK6VTvHbbK0vyERwjqQln4wtAHdvL8bSYOrzNI7bv+KPbAhbGlZdNKELsicPWC1ni6ALH9Dcck5lZsaOMSBBmratsJCWBOmbfxLN817I0+cFwJlC4w9bIC1zHtBHU2N2GtJGiCCnZiEAVtsGeEqyhohAw2ghAFbZBnhKsoaIQMNoIQBW2QZ4SrKGiEDDaCEAVtkGeEqyhohAw2ghAFbZBnhKso+N9k+EcHpb2CvwAAAP//UKJw/QAAAAZJREFUAwDVaoRg8PVQJAAAAABJRU5ErkJggg==" alt="Odd zonas" class="w-8 h-8 mb-2">
+            <span class="font-medium text-base/5 text-neutral-60">6 particiones</span>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAADH0lEQVR4AexUbUiTURQ+WMw/FmUrEvsyKBRBZUSMsvygREqSPgiUoC2i/sgII4QIIxFBIpEQooi0COtHGYuMMAhXUqtgaRGFRJNqFGUf2CCMoPYcvKMFsffyUtyNM3bee+9z77n3nOc592bklzX/TGfLoDT/SYKpLrAoKAoazoCUqOECJQ1PFExKkeELREHDBUoaniiYlCLDF4iChguUNDxRMIGiFByIgikoWkLIomACHSk4EAX/FK31QC09GzwSN4yxBq3Cr/U0ANKy7o6d8T0f32wm365KcrvyaPDSfsYVprVpbLG2grk5sygYekkF5YfZDh3106aqYiopXEjexh7GJr//4ABj+1v+z82eQZf7Q+xftL6Fjp+5RXt3rKWh+y8YO31hiMrcyy3vpxZqJ4hA3K6lzCrYBcsri5cQkupqrWM80zGdA1SH+GJq3PU3MREgA31gah57ZGVl0taNLvZHBQDDWQXLchjbXVdKgeCocrHcaiWIQx2x4E+cCzCr4VfjzDJOW7wgm1o6+xnHGCWLFgY1Lvof0p76NdTgqSD0gWEONs85Ew01tfXF/b3bVxOSnoh+YwwK1qwr4rLlxRY/WgkGQ2Gqqu8kFVzk7RcCyzjryfMIXR0YQZc+fPpKKGUeTH3gAzzy7nPcf2qK/cq3HeMWGNY552RRNDpJV24MA6KxNx/J4ZhGigwGLXy0EkR5oSzRYm/cu+Gnr+nByBjlLXJyCUJl9JE81iiDoiADhr7C0fpiJTzQu4/VgX/u/NkUuDfKRG2uLsESwjVA5/34BBrLppUgFMKlbz+4he8FTsEj8zve3eFh5oFjHoaEqisK6VTvHbbK0vyERwjqQln4wtAHdvL8bSYOrzNI7bv+KPbAhbGlZdNKELsicPWC1ni6ALH9Dcck5lZsaOMSBBmratsJCWBOmbfxLN817I0+cFwJlC4w9bIC1zHtBHU2N2GtJGiCCnZiEAVtsGeEqyhohAw2ghAFbZBnhKsoaIQMNoIQBW2QZ4SrKGiEDDaCEAVtkGeEqyhohAw2ghAFbZBnhKso+N9k+EcHpb2CvwAAAP//UKJw/QAAAAZJREFUAwDVaoRg8PVQJAAAAABJRU5ErkJggg==" alt="Odd zonas" class="w-8 h-8 mb-2">
+            <span class="font-medium text-base/5 text-neutral-60">Vía radio SF1</span>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAADH0lEQVR4AexUbUiTURQ+WMw/FmUrEvsyKBRBZUSMsvygREqSPgiUoC2i/sgII4QIIxFBIpEQooi0COtHGYuMMAhXUqtgaRGFRJNqFGUf2CCMoPYcvKMFsffyUtyNM3bee+9z77n3nOc592bklzX/TGfLoDT/SYKpLrAoKAoazoCUqOECJQ1PFExKkeELREHDBUoaniiYlCLDF4iChguUNDxRMIGiFByIgikoWkLIomACHSk4EAX/FK31QC09GzwSN4yxBq3Cr/U0ANKy7o6d8T0f32wm365KcrvyaPDSfsYVprVpbLG2grk5sygYekkF5YfZDh3106aqYiopXEjexh7GJr//4ABj+1v+z82eQZf7Q+xftL6Fjp+5RXt3rKWh+y8YO31hiMrcyy3vpxZqJ4hA3K6lzCrYBcsri5cQkupqrWM80zGdA1SH+GJq3PU3MREgA31gah57ZGVl0taNLvZHBQDDWQXLchjbXVdKgeCocrHcaiWIQx2x4E+cCzCr4VfjzDJOW7wgm1o6+xnHGCWLFgY1Lvof0p76NdTgqSD0gWEONs85Ew01tfXF/b3bVxOSnoh+YwwK1qwr4rLlxRY/WgkGQ2Gqqu8kFVzk7RcCyzjryfMIXR0YQZc+fPpKKGUeTH3gAzzy7nPcf2qK/cq3HeMWGNY552RRNDpJV24MA6KxNx/J4ZhGigwGLXy0EkR5oSzRYm/cu+Gnr+nByBjlLXJyCUJl9JE81iiDoiADhr7C0fpiJTzQu4/VgX/u/NkUuDfKRG2uLsESwjVA5/34BBrLppUgFMKlbz+4he8FTsEj8zve3eFh5oFjHoaEqisK6VTvHbbK0vyERwjqQln4wtAHdvL8bSYOrzNI7bv+KPbAhbGlZdNKELsicPWC1ni6ALH9Dcck5lZsaOMSBBmratsJCWBOmbfxLN817I0+cFwJlC4w9bIC1zHtBHU2N2GtJGiCCnZiEAVtsGeEqyhohAw2ghAFbZBnhKsoaIQMNoIQBW2QZ4SrKGiEDDaCEAVtkGeEqyhohAw2ghAFbZBnhKso+N9k+EcHpb2CvwAAAP//UKJw/QAAAAZJREFUAwDVaoRg8PVQJAAAAABJRU5ErkJggg==" alt="Odd zonas" class="w-8 h-8 mb-2">
+            <span class="font-medium text-base/5 text-neutral-60">Vía radio Fh1</span>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAADH0lEQVR4AexUbUiTURQ+WMw/FmUrEvsyKBRBZUSMsvygREqSPgiUoC2i/sgII4QIIxFBIpEQooi0COtHGYuMMAhXUqtgaRGFRJNqFGUf2CCMoPYcvKMFsffyUtyNM3bee+9z77n3nOc592bklzX/TGfLoDT/SYKpLrAoKAoazoCUqOECJQ1PFExKkeELREHDBUoaniiYlCLDF4iChguUNDxRMIGiFByIgikoWkLIomACHSk4EAX/FK31QC09GzwSN4yxBq3Cr/U0ANKy7o6d8T0f32wm365KcrvyaPDSfsYVprVpbLG2grk5sygYekkF5YfZDh3106aqYiopXEjexh7GJr//4ABj+1v+z82eQZf7Q+xftL6Fjp+5RXt3rKWh+y8YO31hiMrcyy3vpxZqJ4hA3K6lzCrYBcsri5cQkupqrWM80zGdA1SH+GJq3PU3MREgA31gah57ZGVl0taNLvZHBQDDWQXLchjbXVdKgeCocrHcaiWIQx2x4E+cCzCr4VfjzDJOW7wgm1o6+xnHGCWLFgY1Lvof0p76NdTgqSD0gWEONs85Ew01tfXF/b3bVxOSnoh+YwwK1qwr4rLlxRY/WgkGQ2Gqqu8kFVzk7RcCyzjryfMIXR0YQZc+fPpKKGUeTH3gAzzy7nPcf2qK/cq3HeMWGNY552RRNDpJV24MA6KxNx/J4ZhGigwGLXy0EkR5oSzRYm/cu+Gnr+nByBjlLXJyCUJl9JE81iiDoiADhr7C0fpiJTzQu4/VgX/u/NkUuDfKRG2uLsESwjVA5/34BBrLppUgFMKlbz+4he8FTsEj8zve3eFh5oFjHoaEqisK6VTvHbbK0vyERwjqQln4wtAHdvL8bSYOrzNI7bv+KPbAhbGlZdNKELsicPWC1ni6ALH9Dcck5lZsaOMSBBmratsJCWBOmbfxLN817I0+cFwJlC4w9bIC1zHtBHU2N2GtJGiCCnZiEAVtsGeEqyhohAw2ghAFbZBnhKsoaIQMNoIQBW2QZ4SrKGiEDDaCEAVtkGeEqyhohAw2ghAFbZBnhKso+N9k+EcHpb2CvwAAAP//UKJw/QAAAAZJREFUAwDVaoRg8PVQJAAAAABJRU5ErkJggg==" alt="Odd zonas" class="w-8 h-8 mb-2">
+            <span class="font-medium text-base/5 text-neutral-60">Conexión IP</span>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAADH0lEQVR4AexUbUiTURQ+WMw/FmUrEvsyKBRBZUSMsvygREqSPgiUoC2i/sgII4QIIxFBIpEQooi0COtHGYuMMAhXUqtgaRGFRJNqFGUf2CCMoPYcvKMFsffyUtyNM3bee+9z77n3nOc592bklzX/TGfLoDT/SYKpLrAoKAoazoCUqOECJQ1PFExKkeELREHDBUoaniiYlCLDF4iChguUNDxRMIGiFByIgikoWkLIomACHSk4EAX/FK31QC09GzwSN4yxBq3Cr/U0ANKy7o6d8T0f32wm365KcrvyaPDSfsYVprVpbLG2grk5sygYekkF5YfZDh3106aqYiopXEjexh7GJr//4ABj+1v+z82eQZf7Q+xftL6Fjp+5RXt3rKWh+y8YO31hiMrcyy3vpxZqJ4hA3K6lzCrYBcsri5cQkupqrWM80zGdA1SH+GJq3PU3MREgA31gah57ZGVl0taNLvZHBQDDWQXLchjbXVdKgeCocrHcaiWIQx2x4E+cCzCr4VfjzDJOW7wgm1o6+xnHGCWLFgY1Lvof0p76NdTgqSD0gWEONs85Ew01tfXF/b3bVxOSnoh+YwwK1qwr4rLlxRY/WgkGQ2Gqqu8kFVzk7RcCyzjryfMIXR0YQZc+fPpKKGUeTH3gAzzy7nPcf2qK/cq3HeMWGNY552RRNDpJV24MA6KxNx/J4ZhGigwGLXy0EkR5oSzRYm/cu+Gnr+nByBjlLXJyCUJl9JE81iiDoiADhr7C0fpiJTzQu4/VgX/u/NkUuDfKRG2uLsESwjVA5/34BBrLppUgFMKlbz+4he8FTsEj8zve3eFh5oFjHoaEqisK6VTvHbbK0vyERwjqQln4wtAHdvL8bSYOrzNI7bv+KPbAhbGlZdNKELsicPWC1ni6ALH9Dcck5lZsaOMSBBmratsJCWBOmbfxLN817I0+cFwJlC4w9bIC1zHtBHU2N2GtJGiCCnZiEAVtsGeEqyhohAw2ghAFbZBnhKsoaIQMNoIQBW2QZ4SrKGiEDDaCEAVtkGeEqyhohAw2ghAFbZBnhKso+N9k+EcHpb2CvwAAAP//UKJw/QAAAAZJREFUAwDVaoRg8PVQJAAAAABJRU5ErkJggg==" alt="Odd zonas" class="w-8 h-8 mb-2">
+            <span class="font-medium text-base/5 text-neutral-60">Conexión 2G</span>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAADH0lEQVR4AexUbUiTURQ+WMw/FmUrEvsyKBRBZUSMsvygREqSPgiUoC2i/sgII4QIIxFBIpEQooi0COtHGYuMMAhXUqtgaRGFRJNqFGUf2CCMoPYcvKMFsffyUtyNM3bee+9z77n3nOc592bklzX/TGfLoDT/SYKpLrAoKAoazoCUqOECJQ1PFExKkeELREHDBUoaniiYlCLDF4iChguUNDxRMIGiFByIgikoWkLIomACHSk4EAX/FK31QC09GzwSN4yxBq3Cr/U0ANKy7o6d8T0f32wm365KcrvyaPDSfsYVprVpbLG2grk5sygYekkF5YfZDh3106aqYiopXEjexh7GJr//4ABj+1v+z82eQZf7Q+xftL6Fjp+5RXt3rKWh+y8YO31hiMrcyy3vpxZqJ4hA3K6lzCrYBcsri5cQkupqrWM80zGdA1SH+GJq3PU3MREgA31gah57ZGVl0taNLvZHBQDDWQXLchjbXVdKgeCocrHcaiWIQx2x4E+cCzCr4VfjzDJOW7wgm1o6+xnHGCWLFgY1Lvof0p76NdTgqSD0gWEONs85Ew01tfXF/b3bVxOSnoh+YwwK1qwr4rLlxRY/WgkGQ2Gqqu8kFVzk7RcCyzjryfMIXR0YQZc+fPpKKGUeTH3gAzzy7nPcf2qK/cq3HeMWGNY552RRNDpJV24MA6KxNx/J4ZhGigwGLXy0EkR5oSzRYm/cu+Gnr+nByBjlLXJyCUJl9JE81iiDoiADhr7C0fpiJTzQu4/VgX/u/NkUuDfKRG2uLsESwjVA5/34BBrLppUgFMKlbz+4he8FTsEj8zve3eFh5oFjHoaEqisK6VTvHbbK0vyERwjqQln4wtAHdvL8bSYOrzNI7bv+KPbAhbGlZdNKELsicPWC1ni6ALH9Dcck5lZsaOMSBBmratsJCWBOmbfxLN817I0+cFwJlC4w9bIC1zHtBHU2N2GtJGiCCnZiEAVtsGeEqyhohAw2ghAFbZBnhKsoaIQMNoIQBW2QZ4SrKGiEDDaCEAVtkGeEqyhohAw2ghAFbZBnhKso+N9k+EcHpb2CvwAAAP//UKJw/QAAAAZJREFUAwDVaoRg8PVQJAAAAABJRU5ErkJggg==" alt="Odd zonas" class="w-8 h-8 mb-2">
+            <span class="font-medium text-base/5 text-neutral-60">Conexión 4G</span>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAADH0lEQVR4AexUbUiTURQ+WMw/FmUrEvsyKBRBZUSMsvygREqSPgiUoC2i/sgII4QIIxFBIpEQooi0COtHGYuMMAhXUqtgaRGFRJNqFGUf2CCMoPYcvKMFsffyUtyNM3bee+9z77n3nOc592bklzX/TGfLoDT/SYKpLrAoKAoazoCUqOECJQ1PFExKkeELREHDBUoaniiYlCLDF4iChguUNDxRMIGiFByIgikoWkLIomACHSk4EAX/FK31QC09GzwSN4yxBq3Cr/U0ANKy7o6d8T0f32wm365KcrvyaPDSfsYVprVpbLG2grk5sygYekkF5YfZDh3106aqYiopXEjexh7GJr//4ABj+1v+z82eQZf7Q+xftL6Fjp+5RXt3rKWh+y8YO31hiMrcyy3vpxZqJ4hA3K6lzCrYBcsri5cQkupqrWM80zGdA1SH+GJq3PU3MREgA31gah57ZGVl0taNLvZHBQDDWQXLchjbXVdKgeCocrHcaiWIQx2x4E+cCzCr4VfjzDJOW7wgm1o6+xnHGCWLFgY1Lvof0p76NdTgqSD0gWEONs85Ew01tfXF/b3bVxOSnoh+YwwK1qwr4rLlxRY/WgkGQ2Gqqu8kFVzk7RcCyzjryfMIXR0YQZc+fPpKKGUeTH3gAzzy7nPcf2qK/cq3HeMWGNY552RRNDpJV24MA6KxNx/J4ZhGigwGLXy0EkR5oSzRYm/cu+Gnr+nByBjlLXJyCUJl9JE81iiDoiADhr7C0fpiJTzQu4/VgX/u/NkUuDfKRG2uLsESwjVA5/34BBrLppUgFMKlbz+4he8FTsEj8zve3eFh5oFjHoaEqisK6VTvHbbK0vyERwjqQln4wtAHdvL8bSYOrzNI7bv+KPbAhbGlZdNKELsicPWC1ni6ALH9Dcck5lZsaOMSBBmratsJCWBOmbfxLN817I0+cFwJlC4w9bIC1zHtBHU2N2GtJGiCCnZiEAVtsGeEqyhohAw2ghAFbZBnhKsoaIQMNoIQBW2QZ4SrKGiEDDaCEAVtkGeEqyhohAw2ghAFbZBnhKso+N9k+EcHpb2CvwAAAP//UKJw/QAAAAZJREFUAwDVaoRg8PVQJAAAAABJRU5ErkJggg==" alt="Odd zonas" class="w-8 h-8 mb-2">
+            <span class="font-medium text-base/5 text-neutral-60">Z-Wave</span>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAADH0lEQVR4AexUbUiTURQ+WMw/FmUrEvsyKBRBZUSMsvygREqSPgiUoC2i/sgII4QIIxFBIpEQooi0COtHGYuMMAhXUqtgaRGFRJNqFGUf2CCMoPYcvKMFsffyUtyNM3bee+9z77n3nOc592bklzX/TGfLoDT/SYKpLrAoKAoazoCUqOECJQ1PFExKkeELREHDBUoaniiYlCLDF4iChguUNDxRMIGiFByIgikoWkLIomACHSk4EAX/FK31QC09GzwSN4yxBq3Cr/U0ANKy7o6d8T0f32wm365KcrvyaPDSfsYVprVpbLG2grk5sygYekkF5YfZDh3106aqYiopXEjexh7GJr//4ABj+1v+z82eQZf7Q+xftL6Fjp+5RXt3rKWh+y8YO31hiMrcyy3vpxZqJ4hA3K6lzCrYBcsri5cQkupqrWM80zGdA1SH+GJq3PU3MREgA31gah57ZGVl0taNLvZHBQDDWQXLchjbXVdKgeCocrHcaiWIQx2x4E+cCzCr4VfjzDJOW7wgm1o6+xnHGCWLFgY1Lvof0p76NdTgqSD0gWEONs85Ew01tfXF/b3bVxOSnoh+YwwK1qwr4rLlxRY/WgkGQ2Gqqu8kFVzk7RcCyzjryfMIXR0YQZc+fPpKKGUeTH3gAzzy7nPcf2qK/cq3HeMWGNY552RRNDpJV24MA6KxNx/J4ZhGigwGLXy0EkR5oSzRYm/cu+Gnr+nByBjlLXJyCUJl9JE81iiDoiADhr7C0fpiJTzQu4/VgX/u/NkUuDfKRG2uLsESwjVA5/34BBrLppUgFMKlbz+4he8FTsEj8zve3eFh5oFjHoaEqisK6VTvHbbK0vyERwjqQln4wtAHdvL8bSYOrzNI7bv+KPbAhbGlZdNKELsicPWC1ni6ALH9Dcck5lZsaOMSBBmratsJCWBOmbfxLN817I0+cFwJlC4w9bIC1zHtBHU2N2GtJGiCCnZiEAVtsGeEqyhohAw2ghAFbZBnhKsoaIQMNoIQBW2QZ4SrKGiEDDaCEAVtkGeEqyhohAw2ghAFbZBnhKso+N9k+EcHpb2CvwAAAP//UKJw/QAAAAZJREFUAwDVaoRg8PVQJAAAAABJRU5ErkJggg==" alt="Odd zonas" class="w-8 h-8 mb-2">
+            <span class="font-medium text-base/5 text-neutral-60">220V CA</span>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAADH0lEQVR4AexUbUiTURQ+WMw/FmUrEvsyKBRBZUSMsvygREqSPgiUoC2i/sgII4QIIxFBIpEQooi0COtHGYuMMAhXUqtgaRGFRJNqFGUf2CCMoPYcvKMFsffyUtyNM3bee+9z77n3nOc592bklzX/TGfLoDT/SYKpLrAoKAoazoCUqOECJQ1PFExKkeELREHDBUoaniiYlCLDF4iChguUNDxRMIGiFByIgikoWkLIomACHSk4EAX/FK31QC09GzwSN4yxBq3Cr/U0ANKy7o6d8T0f32wm365KcrvyaPDSfsYVprVpbLG2grk5sygYekkF5YfZDh3106aqYiopXEjexh7GJr//4ABj+1v+z82eQZf7Q+xftL6Fjp+5RXt3rKWh+y8YO31hiMrcyy3vpxZqJ4hA3K6lzCrYBcsri5cQkupqrWM80zGdA1SH+GJq3PU3MREgA31gah57ZGVl0taNLvZHBQDDWQXLchjbXVdKgeCocrHcaiWIQx2x4E+cCzCr4VfjzDJOW7wgm1o6+xnHGCWLFgY1Lvof0p76NdTgqSD0gWEONs85Ew01tfXF/b3bVxOSnoh+YwwK1qwr4rLlxRY/WgkGQ2Gqqu8kFVzk7RcCyzjryfMIXR0YQZc+fPpKKGUeTH3gAzzy7nPcf2qK/cq3HeMWGNY552RRNDpJV24MA6KxNx/J4ZhGigwGLXy0EkR5oSzRYm/cu+Gnr+nByBjlLXJyCUJl9JE81iiDoiADhr7C0fpiJTzQu4/VgX/u/NkUuDfKRG2uLsESwjVA5/34BBrLppUgFMKlbz+4he8FTsEj8zve3eFh5oFjHoaEqisK6VTvHbbK0vyERwjqQln4wtAHdvL8bSYOrzNI7bv+KPbAhbGlZdNKELsicPWC1ni6ALH9Dcck5lZsaOMSBBmratsJCWBOmbfxLN817I0+cFwJlC4w9bIC1zHtBHU2N2GtJGiCCnZiEAVtsGeEqyhohAw2ghAFbZBnhKsoaIQMNoIQBW2QZ4SrKGiEDDaCEAVtkGeEqyhohAw2ghAFbZBnhKso+N9k+EcHpb2CvwAAAP//UKJw/QAAAAZJREFUAwDVaoRg8PVQJAAAAABJRU5ErkJggg==" alt="Odd zonas" class="w-8 h-8 mb-2">
+            <span class="font-medium text-base/5 text-neutral-60">Pilas incluidas</span>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAADH0lEQVR4AexUbUiTURQ+WMw/FmUrEvsyKBRBZUSMsvygREqSPgiUoC2i/sgII4QIIxFBIpEQooi0COtHGYuMMAhXUqtgaRGFRJNqFGUf2CCMoPYcvKMFsffyUtyNM3bee+9z77n3nOc592bklzX/TGfLoDT/SYKpLrAoKAoazoCUqOECJQ1PFExKkeELREHDBUoaniiYlCLDF4iChguUNDxRMIGiFByIgikoWkLIomACHSk4EAX/FK31QC09GzwSN4yxBq3Cr/U0ANKy7o6d8T0f32wm365KcrvyaPDSfsYVprVpbLG2grk5sygYekkF5YfZDh3106aqYiopXEjexh7GJr//4ABj+1v+z82eQZf7Q+xftL6Fjp+5RXt3rKWh+y8YO31hiMrcyy3vpxZqJ4hA3K6lzCrYBcsri5cQkupqrWM80zGdA1SH+GJq3PU3MREgA31gah57ZGVl0taNLvZHBQDDWQXLchjbXVdKgeCocrHcaiWIQx2x4E+cCzCr4VfjzDJOW7wgm1o6+xnHGCWLFgY1Lvof0p76NdTgqSD0gWEONs85Ew01tfXF/b3bVxOSnoh+YwwK1qwr4rLlxRY/WgkGQ2Gqqu8kFVzk7RcCyzjryfMIXR0YQZc+fPpKKGUeTH3gAzzy7nPcf2qK/cq3HeMWGNY552RRNDpJV24MA6KxNx/J4ZhGigwGLXy0EkR5oSzRYm/cu+Gnr+nByBjlLXJyCUJl9JE81iiDoiADhr7C0fpiJTzQu4/VgX/u/NkUuDfKRG2uLsESwjVA5/34BBrLppUgFMKlbz+4he8FTsEj8zve3eFh5oFjHoaEqisK6VTvHbbK0vyERwjqQln4wtAHdvL8bSYOrzNI7bv+KPbAhbGlZdNKELsicPWC1ni6ALH9Dcck5lZsaOMSBBmratsJCWBOmbfxLN817I0+cFwJlC4w9bIC1zHtBHU2N2GtJGiCCnZiEAVtsGeEqyhohAw2ghAFbZBnhKsoaIQMNoIQBW2QZ4SrKGiEDDaCEAVtkGeEqyhohAw2ghAFbZBnhKso+N9k+EcHpb2CvwAAAP//UKJw/QAAAAZJREFUAwDVaoRg8PVQJAAAAABJRU5ErkJggg==" alt="Odd zonas" class="w-8 h-8 mb-2">
+            <span class="font-medium text-base/5 text-neutral-60">Instalación en interior</span>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAADH0lEQVR4AexUbUiTURQ+WMw/FmUrEvsyKBRBZUSMsvygREqSPgiUoC2i/sgII4QIIxFBIpEQooi0COtHGYuMMAhXUqtgaRGFRJNqFGUf2CCMoPYcvKMFsffyUtyNM3bee+9z77n3nOc592bklzX/TGfLoDT/SYKpLrAoKAoazoCUqOECJQ1PFExKkeELREHDBUoaniiYlCLDF4iChguUNDxRMIGiFByIgikoWkLIomACHSk4EAX/FK31QC09GzwSN4yxBq3Cr/U0ANKy7o6d8T0f32wm365KcrvyaPDSfsYVprVpbLG2grk5sygYekkF5YfZDh3106aqYiopXEjexh7GJr//4ABj+1v+z82eQZf7Q+xftL6Fjp+5RXt3rKWh+y8YO31hiMrcyy3vpxZqJ4hA3K6lzCrYBcsri5cQkupqrWM80zGdA1SH+GJq3PU3MREgA31gah57ZGVl0taNLvZHBQDDWQXLchjbXVdKgeCocrHcaiWIQx2x4E+cCzCr4VfjzDJOW7wgm1o6+xnHGCWLFgY1Lvof0p76NdTgqSD0gWEONs85Ew01tfXF/b3bVxOSnoh+YwwK1qwr4rLlxRY/WgkGQ2Gqqu8kFVzk7RcCyzjryfMIXR0YQZc+fPpKKGUeTH3gAzzy7nPcf2qK/cq3HeMWGNY552RRNDpJV24MA6KxNx/J4ZhGigwGLXy0EkR5oSzRYm/cu+Gnr+nByBjlLXJyCUJl9JE81iiDoiADhr7C0fpiJTzQu4/VgX/u/NkUuDfKRG2uLsESwjVA5/34BBrLppUgFMKlbz+4he8FTsEj8zve3eFh5oFjHoaEqisK6VTvHbbK0vyERwjqQln4wtAHdvL8bSYOrzNI7bv+KPbAhbGlZdNKELsicPWC1ni6ALH9Dcck5lZsaOMSBBmratsJCWBOmbfxLN817I0+cFwJlC4w9bIC1zHtBHU2N2GtJGiCCnZiEAVtsGeEqyhohAw2ghAFbZBnhKsoaIQMNoIQBW2QZ4SrKGiEDDaCEAVtkGeEqyhohAw2ghAFbZBnhKso+N9k+EcHpb2CvwAAAP//UKJw/QAAAAZJREFUAwDVaoRg8PVQJAAAAABJRU5ErkJggg==" alt="Odd zonas" class="w-8 h-8 mb-2">
+            <span class="font-medium text-base/5 text-neutral-60">EN50131 de Grado 2</span>
+          </div>
+
         </div>
       </div>
     </section>
-
-    <!-- Lorem ipsum passage -->
-    <section class="mx-auto max-w-6xl px-24 py-12 text-center">
-      <h2 class="text-18/20 font-medium text-heading">Lorem Ipsum passage</h2>
-      <p class="my-24 text-primary-40-light font-medium text-12-5/15 ">The standard used since the 1500s</p>
-      <p class="font-normal text-2xl/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </section>
-
+  </div>
   </main>
 
   <!-- Footer -->
