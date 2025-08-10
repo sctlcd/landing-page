@@ -376,7 +376,7 @@ document.querySelector('#app').innerHTML = `
 
         <div class="mb-6">
           <!-- Table -->
-          <div>
+          <div class="overflow-x-auto">
             <table class="min-w-sm border-collapse mx-auto">
               <thead>
                 <tr class="bg-primary-00 text-neutral-05 text-9-5/11 font-semibold">
