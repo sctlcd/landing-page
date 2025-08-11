@@ -12,7 +12,7 @@ document.querySelector('#app').innerHTML = `
         <div class="flex items-center space-x-8">
           <!-- Partner Program with Icon -->
           <div>
-            <a href="#" class="flex items-center pl-4 hover:text-blue-600">
+            <a href="#" class="flex items-center pl-4 hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">
               <svg class="mr-2 h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A9.936 9.936 0 0112 15c2.137 0 4.114.66 5.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
@@ -22,17 +22,17 @@ document.querySelector('#app').innerHTML = `
 
           <!-- Language Dropdown -->
           <div class="relative group z-10">
-            <button id="desktop-language-selector" class="flex items-center pr-4 hover:text-blue-600 focus:outline-none">
+            <button id="desktop-language-selector" class="flex items-center pr-4 hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">
               Español
               <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div id="language-desktop" class="absolute right-0 w-32 bg-white rounded-xl shadow-md inset-shadow-xs opacity-100 group-hover:opacity-100 invisible group-hover:visible transition-opacity py-3">
-              <a href="#" class="block px-6 py-2 text-sm hover:bg-blue-50">Español</a>
-              <a href="#" class="block px-6 py-2 text-sm hover:bg-blue-50">Inglés</a>
-              <a href="#" class="block px-6 py-2 text-sm hover:bg-blue-50">Francés</a>
-              <a href="#" class="block px-6 py-2 text-sm hover:bg-blue-50">Portugués</a>
+            <div class="absolute right-0 w-36 py-3 bg-primary-light rounded-xl shadow-md inset-shadow-xs opacity-100 group-hover:opacity-100 invisible group-hover:visible transition-opacity">
+              <a href="#" class="block px-6 py-2 text-sm hover:bg-neutral-20">Español</a>
+              <a href="#" class="block px-6 py-2 text-sm hover:bg-neutral-20">Inglés</a>
+              <a href="#" class="block px-6 py-2 text-sm hover:bg-neutral-20">Francés</a>
+              <a href="#" class="block px-6 py-2 text-sm hover:bg-neutral-20">Portugués</a>
             </div>
           </div>
         </div>
@@ -54,21 +54,21 @@ document.querySelector('#app').innerHTML = `
 
           <!-- Sobre Nosotros Dropdown -->
           <div class="relative group">
-            <button class="px-4 py-2 flex items-center hover:text-blue-600 md:text-xl/6 focus:outline-none">
+            <button class="px-4 py-2 flex items-center hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light md:text-xl/6">
               Sobre Nosotros
               <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-             <div class="absolute right-0 w-36 py-3 bg-white rounded-xl shadow-md inset-shadow-xs opacity-100 group-hover:opacity-100 invisible group-hover:visible transition-opacity">
-              <a href="#" class="block px-8 py-2 text-sm hover:bg-blue-50">Historia</a>
-              <a href="#" class="block px-8 py-2 text-sm hover:bg-blue-50">Valores</a>
-              <a href="#" class="block px-8 py-2 text-sm hover:bg-blue-50">Equipo</a>
+            <div class="absolute right-0 w-36 py-3 bg-primary-light rounded-xl shadow-md inset-shadow-xs opacity-100 group-hover:opacity-100 invisible group-hover:visible transition-opacity">
+              <a href="#" class="block px-8 py-2 text-sm hover:bg-neutral-20">Historia</a>
+              <a href="#" class="block px-8 py-2 text-sm hover:bg-neutral-20">Valores</a>
+              <a href="#" class="block px-8 py-2 text-sm hover:bg-neutral-20">Equipo</a>
             </div>
           </div>
 
           <!-- CTA Button -->
-          <button href="#" class="inline-flex items-center rounded-full border md:border-2 border-primary-00 pl-7 md:text-sm pr-3 py-1 text-primary-00 transition hover:bg-blue-50 z-0">
+          <button href="#" class="inline-flex items-center rounded-full border md:border-2 border-primary-00 pl-7 md:text-sm pr-3 py-1 text-primary-00 transition hover:bg-neutral-20 z-0">
             <span class="mr-1">Comprar ahora</span>
             <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" transform="rotate(-90)">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -89,10 +89,10 @@ document.querySelector('#app').innerHTML = `
   </nav>
 
   <!-- Mobile menu Background -->
-  <div id="menuBg" class="bg-opacity-50 fixed inset-0 hidden bg-primary-00"></div>
+  <div id="menuBg" class="bg-opacity-50 fixed inset-0 hidden bg-primary-00 z-10"></div>
 
   <!-- Mobile menu -->
-  <div id="mobileMenu" class="fixed top-0 right-0 z-50 h-full w-64 translate-x-full transform bg-white shadow-lg transition-transform duration-300 ease-in-out">
+  <div id="mobileMenu" class="fixed top-0 right-0 z-50 h-full w-64 translate-x-full transform bg-primary-light shadow-lg transition-transform duration-300 ease-in-out">
     
     <!-- Header mobile menu -->
     <div class="flex items-center justify-between border-b p-4">
@@ -105,49 +105,49 @@ document.querySelector('#app').innerHTML = `
     </div>
 
     <!-- Mobile menu content -->
-    <nav class="space-y-4 p-4 font-medium my-3">
+    <nav class="space-y-4 p-4 font-medium my-4">
       
     <!-- Partner Program (Mobile) -->
       <div>
-        <a href="#" class="block hover:text-blue-600">Partner Program</a>
+        <a href="#" class="block hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Partner Program</a>
       </div>
 
       <!-- Language Dropdown (Mobile) -->
       <div>
-        <button id="dropdownBtnMobileLanguage" class="w-full flex justify-between items-center hover:text-blue-600">
+        <button id="dropdownBtnMobileLanguage" class="w-full flex justify-between items-center hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">
           Español
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
             viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div id="dropdownMenuMobileLanguage" class="hidden pl-4 space-y-1 mt-2">
-          <a href="#" class="block text-sm hover:text-blue-600">Español</a>
-          <a href="#" class="block text-sm hover:text-blue-600">Inglés</a>
-          <a href="#" class="block text-sm hover:text-blue-600">Francés</a>
-          <a href="#" class="block text-sm hover:text-blue-600">Portugués</a>
+        <div id="dropdownMenuMobileLanguage" class="hidden pl-4 space-y-3 mt-2">
+          <a href="#" class="block text-sm hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Español</a>
+          <a href="#" class="block text-sm hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Inglés</a>
+          <a href="#" class="block text-sm hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Francés</a>
+          <a href="#" class="block text-sm hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Portugués</a>
         </div>
       </div>
 
       <!-- Sobre Nosotros Dropdown (Mobile) -->
       <div>
-        <button id="dropdownBtnMobileAbout" class="w-full flex justify-between items-center hover:text-blue-600">
+        <button id="dropdownBtnMobileAbout" class="w-full flex justify-between items-center hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">
           Sobre Nosotros
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
             viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div id="dropdownMenuMobileAbout" class="hidden pl-4 space-y-1 mt-2">
-          <a href="#" class="block text-sm hover:text-blue-600">Historia</a>
-          <a href="#" class="block text-sm hover:text-blue-600">Valores</a>
-          <a href="#" class="block text-sm hover:text-blue-600">Equipo</a>
+        <div id="dropdownMenuMobileAbout" class="hidden pl-4 space-y-3 mt-2">
+          <a href="#" class="block text-sm hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Historia</a>
+          <a href="#" class="block text-sm hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Valores</a>
+          <a href="#" class="block text-sm hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Equipo</a>
         </div>
       </div>
 
       <!-- Comprar ahora (Mobile) -->
       <div>
-        <a href="#" class="mt-9 block rounded-full border-2 border-primary-00 px-4 pt-2 pb-3 text-center text-primary-00 transition hover:bg-blue-50">
+        <a href="#" class="mt-9 block rounded-full border-2 border-primary-00 px-4 pt-2 pb-3 text-center text-primary-00 transition hover:bg-neutral-20">
       <span>Comprar ahora</span>
       </a>
       </div>
@@ -291,7 +291,7 @@ document.querySelector('#app').innerHTML = `
         <div class="max-w-7xl mx-auto grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-4">
           
           <!-- Card 1 -->
-          <div class="bg-white rounded-xl shadow inset-shadow-xs p-6 hover:shadow-lg transition">
+          <div class="bg-primary-light rounded-xl shadow inset-shadow-xs p-6 hover:shadow-lg transition">
             <h3 class="text-base/4.5 font-bold text-primary-20-light">
               Soporte de montaje triangular
             </h3>
@@ -308,7 +308,7 @@ document.querySelector('#app').innerHTML = `
           </div>
 
           <!-- Card 2 -->
-          <div class="bg-white rounded-xl shadow inset-shadow-xs p-6 hover:shadow-lg transition">
+          <div class="bg-primary-light rounded-xl shadow inset-shadow-xs p-6 hover:shadow-lg transition">
             <h3 class="text-base/4.5 font-bold text-primary-20-light">
               Cubierta waterproof para magnéticos DC-23
             </h3>
@@ -325,7 +325,7 @@ document.querySelector('#app').innerHTML = `
           </div>
 
           <!-- Card 3 -->
-          <div class="bg-white rounded-xl shadow inset-shadow-xs p-6 hover:shadow-lg transition">
+          <div class="bg-primary-light rounded-xl shadow inset-shadow-xs p-6 hover:shadow-lg transition">
             <h3 class="text-base/4.5 font-bold text-primary-20-light">
               Soporte giratorio de exterior
             </h3>
@@ -342,7 +342,7 @@ document.querySelector('#app').innerHTML = `
           </div>
 
           <!-- Card 4 -->
-          <div class="bg-white rounded-xl shadow inset-shadow-xs p-6 hover:shadow-lg transition">
+          <div class="bg-primary-light rounded-xl shadow inset-shadow-xs p-6 hover:shadow-lg transition">
             <h3 class="text-base/4.5 font-bold text-primary-20-light">
               Soporte giratorio VESTA
             </h3>
@@ -388,7 +388,7 @@ document.querySelector('#app').innerHTML = `
                   <th class="p-6 rounded-tr-lg">Diamond</th>
                 </tr>
               </thead>
-              <tbody class="bg-white">
+              <tbody class="bg-primary-light">
                 <!-- Row 1 -->
                 <tr class="border-b border-primary-60-light text-7/9.5 font-semibold">
                   <td class="my-3 py-3 px-3 text-left text-neutral-60">Beneficio A</td>
@@ -444,60 +444,60 @@ document.querySelector('#app').innerHTML = `
               <!-- Nombre -->
               <div class="mb-3 md:mb-6 mr-0 md:mr-6">
                 <label for="nombre" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">Nombre<span>&#42;</span></label>
-                <input type="text" placeholder="Nombre" class="rounded-4xl border border-neutral-20 px-6 py-3 text-base/6 focus:ring-2 focus:ring-blue-500 focus:outline-none w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+                <input type="text" placeholder="Nombre" class="rounded-4xl border border-neutral-20 px-6 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
               </div>
               
               <!-- Apellido -->
               <div class="mb-3 md:mb-6">
                 <label for="apellido" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">Apellido<span>&#42;</span></label>
-                <input type="text" placeholder="Apellido" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:ring-blue-500 focus:outline-none w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+                <input type="text" placeholder="Apellido" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
               </div>
 
               <!-- Email -->  
               <div class="mb-3 md:mb-6 mr-0 md:mr-6">
                 <label for="email" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">Email<span>&#42;</span></label>
-                <input type="email" placeholder="Email" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:ring-blue-500 focus:outline-none w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+                <input type="email" placeholder="Email" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
               </div>
 
               <!-- Empresa -->
               <div class="mb-3 md:mb-6">
                 <label for="empresa" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">Empresa<span>&#42;</span></label>
-                <input type="text" placeholder="Empresa" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:ring-blue-500 focus:outline-none w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+                <input type="text" placeholder="Empresa" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
               </div>
 
               <!-- Dirección -->
               <div class="mb-3 md:mb-6 mr-0 md:mr-6">
                 <label for="direccion" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">Dirección<span>&#42;</span></label>
-                <input type="text" placeholder="Dirección" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:ring-blue-500 focus:outline-none w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+                <input type="text" placeholder="Dirección" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
               </div>
               
               <!-- País -->
               <div class="mb-3 md:mb-6">
                 <label for="pais" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">País<span>&#42;</span></label>
-                <input type="text" placeholder="País" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:ring-blue-500 focus:outline-none w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+                <input type="text" placeholder="País" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:border-primary-10-light focus:outline-none w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
               </div>
 
               <!-- Textarea -->
               <label for="partner-program" class="text-xs/4 font-regular font-inter text-dark pl-4 mb-1">Estoy interesado en el Partner Program<span>&#42;</span></label>
-              <textarea placeholder="Estoy interesado en el Partner Program" class="border border-neutral-20 rounded-3xl px-6 py-4  focus:outline-none focus:ring-2 focus:ring-blue-500 md:col-span-2 resize-none h-32 w-full mt-2 mb-5 md:mb-8 bg-neutral-00 placeholder-neutral-20 font-normal text-base/6"></textarea>
+              <textarea placeholder="Estoy interesado en el Partner Program" class="border border-neutral-20 rounded-3xl px-6 py-4  focus:outline-none focus:border-primary-10-light focus:ring-2 focus:text-primary-10-light md:col-span-2 resize-none h-32 w-full mt-2 mb-5 md:mb-8 bg-neutral-00 placeholder-neutral-20 font-normal text-base/6"></textarea>
 
               <!-- Checkbox -->
               <label class="flex items-start text-sm text-neutral-60 md:col-span-2 mb-3">
-                <input type="checkbox" class="mr-2 h-4 w-4 rounded border-neutral-60 text-primary-00 focus:ring-blue-500" required />
+                <input type="checkbox" class="mr-2 h-4 w-4 rounded border-neutral-60 text-primary-00 focus:text-primary-10-light" required />
                 <span class="mb-6 md:mb-12 text-neutral-60">
                   Doy mi consentimiento para el tratamiento de mis datos personales.
-                  <a href="#" class="text-link underline">He leído y acepto la política de privacidad</a>
-                  y el <a href="#" class="text-link underline">aviso legal</a> de la empresa.
+                  <a href="#" class="text-link underline hover:text-secondary-20-dark">He leído y acepto la política de privacidad</a>
+                  y el <a href="#" class="text-link underline hover:text-secondary-20-dark">aviso legal</a> de la empresa.
                 </span>
               </label>
 
               <div class="mb-5 md:mb-8">
-                <a href="#" class="text-link underline text-sm">¿Cómo protegemos sus datos?</a>
+                <a href="#" class="text-link underline text-sm hover:text-secondary-20-dark">¿Cómo protegemos sus datos?</a>
               </div>
 
               <!-- Submit Button -->
               <div class="flex justify-start md:col-span-2">
-                <button type="submit" class="rounded-4xl bg-neutral-05 px-7 py-4 text-sm font-medium border-2 text-primary-00 transition hover:bg-blue-200">Enviar formulario</button>
+                <button type="submit" class="rounded-4xl bg-neutral-05 px-7 py-4 text-sm font-medium border-2 text-primary-00 transition hover:bg-neutral-20">Enviar formulario</button>
               </div>
             </form>
           </div>
@@ -516,15 +516,15 @@ document.querySelector('#app').innerHTML = `
       <div class="space-y-4 text-center md:text-left">
         <h3 class="text-md font-bold text-secondary-90-light">Sobre nosotros</h3>
         <ul class="space-y-2">
-          <li><a href="#" class="text-sm underline text-secondary-60-light hover:text-gray-300">Acerca de Nosotros</a></li>
-          <li><a href="#" class="text-sm underline text-secondary-60-light hover:text-gray-300">Partner Program</a></li>
+          <li><a href="#" class="text-sm underline text-secondary-60-light hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Acerca de Nosotros</a></li>
+          <li><a href="#" class="text-sm underline text-secondary-60-light hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Partner Program</a></li>
         </ul>
       </div>
 
       <!-- Column 2 -->
       <div class="space-y-4 text-center md:text-left">
         <h3 class="text-md font-bold text-secondary-90-light">Software</h3>
-        <a href="#" class="block text-sm underline text-secondaryh-60-light hover:text-gray-300">Aplicación móvil</a>
+        <a href="#" class="block text-sm underline text-secondary-60-light hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Aplicación móvil</a>
         <div class="flex flex-col gap-4 items-center justify-center md:items-start md:justify-start">
           <a href="#">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_(iOS).svg" alt="App Store" class="h-11" />
@@ -562,20 +562,36 @@ document.querySelector('#app').innerHTML = `
       <div>
         <div class="font-bold mb-3 md:mb-4 text-center md:text-left">© Copyright 2025</div>
         <div class="flex flex-col md:flex-row md:flex-wrap justify-center md:gap-y-1 md:gap-x-2 lg:gap-y-2 lg:gap-x-4 text-center">
-          <a href="#" class="hover:underline mb-3 md:mb-0">Política de privacidad</a>
+          <a href="#" class="hover:underline mb-3 md:mb-0 focus:outline-none focus:text-primary-10-light">Política de privacidad</a>
           <span class="hidden md:inline">|</span>
-          <a href="#" class="hover:underline mb-3 md:mb-0">Política de cookies</a>
+          <a href="#" class="hover:underline mb-3 md:mb-0 focus:outline-none focus:text-primary-10-light">Política de cookies</a>
           <span class="hidden md:inline">|</span>
-          <a href="#" class="hover:underline mb-3 md:mb-0">Configuración de cookies</a>
+          <a href="#" class="hover:underline mb-3 md:mb-0 focus:outline-none focus:text-primary-10-light">Configuración de cookies</a>
           <span class="hidden md:inline">|</span>
-          <a href="#" class="hover:underline md:mb-0">Aviso legal</a>
+          <a href="#" class="hover:underline md:mb-0 focus:outline-none focus:text-primary-10-light">Aviso legal</a>
         </div>
       </div>
 
-      <!-- Footer Language selector - Dropdown Wrapper -->
-      <div class="relative inline-block text-left mt-3 md:mt-0">
+      <!-- HOVER Footer Language selector - Dropdown Wrapper (Mobile) -->
+      <div class="relative group z-10">
+        <button id="desktop-footer-language-selector" class="items-center px-6 py-4 hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light focus:border-primary-10-light hidden md:flex">
+          <span class="mr-3">Español</span>
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" transform="rotate(-180)">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="footer-language-desktop" class="absolute right-0 w-32 bg-primary-light rounded-xl opacity-100 group-hover:opacity-100 invisible group-hover:visible transition-opacity py-3 bottom-full text-dark shadow-lg inset-shadow-sm inset-shadow-primary-dark">
+          <a href="#" class="block px-6 py-2 text-sm hover:bg-neutral-20">Español</a>
+              <a href="#" class="block px-6 py-2 text-sm hover:bg-neutral-20">Inglés</a>
+              <a href="#" class="block px-6 py-2 text-sm hover:bg-neutral-20">Francés</a>
+              <a href="#" class="block px-6 py-2 text-sm hover:bg-neutral-20">Portugués</a>
+        </div>
+      </div>
+
+      <!-- ON CLICK Footer Language selector - Dropdown Wrapper (Mobile) -->
+      <div class="relative inline-block text-left mt-3 md:hidden">
         <!-- Trigger Button -->
-        <button id="dropdownBtnFooterLanguage" class="inline-flex cursor-pointer items-center hover:underline">
+        <button id="dropdownBtnFooterLanguageMobile" class="inline-flex cursor-pointer items-center hover:underline">
           <span>Español</span>
           <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" transform="rotate(-180)">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -583,11 +599,11 @@ document.querySelector('#app').innerHTML = `
         </button>
 
         <!-- Dropdown Menu (Opens Up) -->
-        <div id="dropdownMenuFooterLanguage" class="absolute right-0 bottom-full mb-2 hidden w-28 rounded-xl bg-primary-dark py-3 opacity-100 shadow-md inset-shadow-xs transition-opacity group-hover:visible group-hover:opacity-100">
-          <a href="#" class="block px-6 py-2 text-xs hover:bg-gray-500">Español</a>
-          <a href="#" class="block px-6 py-2 text-xs hover:bg-gray-500">Inglés</a>
-          <a href="#" class="block px-6 py-2 text-xs hover:bg-gray-500">Francés</a>
-          <a href="#" class="block px-6 py-2 text-xs hover:bg-gray-500">Portugués</a>
+        <div id="dropdownMenuFooterLanguageMobile" class="absolute right-0 bottom-full mb-2 mr-[-22px] hidden w-28 rounded-xl bg-primary-light text-dark py-3 opacity-100 shadow-lg inset-shadow-sm inset-shadow-primary-dark transition-opacity group-hover:visible group-hover:opacity-100">
+          <a href="#" class="block px-6 py-2 text-xs hover:bg-neutral-20">Español</a>
+          <a href="#" class="block px-6 py-2 text-xs hover:bg-neutral-20">Inglés</a>
+          <a href="#" class="block px-6 py-2 text-xs hover:bg-neutral-20">Francés</a>
+          <a href="#" class="block px-6 py-2 text-xs hover:bg-neutral-20">Portugués</a>
         </div>
       </div>
 
@@ -651,8 +667,8 @@ document.addEventListener('click', (event) => {
 });
 
 // Footer Language dropdown toggle onclick
-const btnDdpFooterLanguage = document.getElementById('dropdownBtnFooterLanguage');
-const menuDdpFooterLanguage = document.getElementById('dropdownMenuFooterLanguage');
+const btnDdpFooterLanguage = document.getElementById('dropdownBtnFooterLanguageMobile');
+const menuDdpFooterLanguage = document.getElementById('dropdownMenuFooterLanguageMobile');
 
 btnDdpFooterLanguage.addEventListener('click', () => {
   menuDdpFooterLanguage.classList.toggle('hidden');
