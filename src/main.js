@@ -369,7 +369,7 @@ document.querySelector('#app').innerHTML = `
       </section>
  
       <!-- Tabla comparativa -->
-      <section class="mb-24 max-w-7xl py-24 mx-auto">
+      <section class="mb-24 max-w-7xl py-24 px-4 mx-auto">
         <!-- Heading -->
         <h2 class="text-center font-medium text-12-5/15 text-primary-40-light mb-24 mx-auto">
           Tabla comparativa
@@ -434,6 +434,75 @@ document.querySelector('#app').innerHTML = `
         </div>
       </section>
   
+      <section class="mx-auto my-24 max-w-5xl pt-24 px-4 pb-36">
+        <div class="my-6">
+          <div class="rounded-xl bg-primary-light p-12 shadow-lg inset-shadow-xs">
+            <h2 class="mb-6 text-lg font-bold text-primary-00">Formulario</h2>
+            <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2">
+              <!-- Inputs -->
+                
+              <!-- Nombre -->
+              <div class="mb-3 md:mb-6 mr-0 md:mr-6">
+                <label for="nombre" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">Nombre<span>&#42;</span></label>
+                <input type="text" placeholder="Nombre" class="rounded-4xl border border-neutral-20 px-6 py-3 text-base/6 focus:ring-2 focus:ring-blue-500 focus:outline-none w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+              </div>
+              
+              <!-- Apellido -->
+              <div class="mb-3 md:mb-6">
+                <label for="apellido" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">Apellido<span>&#42;</span></label>
+                <input type="text" placeholder="Apellido" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:ring-blue-500 focus:outline-none w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+              </div>
+
+              <!-- Email -->  
+              <div class="mb-3 md:mb-6 mr-0 md:mr-6">
+                <label for="email" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">Email<span>&#42;</span></label>
+                <input type="email" placeholder="Email" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:ring-blue-500 focus:outline-none w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+              </div>
+
+              <!-- Empresa -->
+              <div class="mb-3 md:mb-6">
+                <label for="empresa" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">Empresa<span>&#42;</span></label>
+                <input type="text" placeholder="Empresa" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:ring-blue-500 focus:outline-none w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+              </div>
+
+              <!-- Dirección -->
+              <div class="mb-3 md:mb-6 mr-0 md:mr-6">
+                <label for="direccion" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">Dirección<span>&#42;</span></label>
+                <input type="text" placeholder="Dirección" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:ring-blue-500 focus:outline-none w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+              </div>
+              
+              <!-- País -->
+              <div class="mb-3 md:mb-6">
+                <label for="pais" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">País<span>&#42;</span></label>
+                <input type="text" placeholder="País" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:ring-blue-500 focus:outline-none w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+              </div>
+
+              <!-- Textarea -->
+              <label for="partner-program" class="text-xs/4 font-regular font-inter text-dark pl-4 mb-1">Estoy interesado en el Partner Program<span>&#42;</span></label>
+              <textarea placeholder="Estoy interesado en el Partner Program" class="border border-neutral-20 rounded-3xl px-6 py-4  focus:outline-none focus:ring-2 focus:ring-blue-500 md:col-span-2 resize-none h-32 w-full mt-2 mb-5 md:mb-8 bg-neutral-00 placeholder-neutral-20 font-normal text-base/6"></textarea>
+
+              <!-- Checkbox -->
+              <label class="flex items-start text-sm text-neutral-60 md:col-span-2 mb-3">
+                <input type="checkbox" class="mr-2 h-4 w-4 rounded border-neutral-60 text-primary-00 focus:ring-blue-500" required />
+                <span class="mb-6 md:mb-12 text-neutral-60">
+                  Doy mi consentimiento para el tratamiento de mis datos personales.
+                  <a href="#" class="text-link underline">He leído y acepto la política de privacidad</a>
+                  y el <a href="#" class="text-link underline">aviso legal</a> de la empresa.
+                </span>
+              </label>
+
+              <div class="mb-5 md:mb-8">
+                <a href="#" class="text-link underline text-sm">¿Cómo protegemos sus datos?</a>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="flex justify-start md:col-span-2">
+                <button type="submit" class="rounded-4xl bg-neutral-05 px-7 py-4 text-sm font-medium border-2 text-primary-00 transition hover:bg-blue-200">Enviar formulario</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
 
