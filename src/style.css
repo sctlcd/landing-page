@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-/* --------------- theme --------------- */
+/******************************************* theme  */
 @theme {
-  /* colors */
+  /******************************************* colors */
   --color-primary-dark: #14203F;
   --color-primary-medium: #283f7e;
   --color-primary-light: #F9FAFC;
@@ -32,19 +32,19 @@
   --color-heading: #324f9e;
   --color-opacities-dark-05: #0A1020;
 
-  /* text */
+  /******************************************* text */
   --text-xxs: 0.63rem;
   --text-18: 67.34px;
   --text-12-5: 50.52px;
   --text-9-5: 37.9px;
   --text-7: 28.43px;
 
-  /* --font- */
+  /******************************************* font */
   --font-roboto-condensed: 'Roboto Condensed', sans-serif;
   --font-inter: 'Inter', sans-serif;
   --font-roboto: 'Roboto', sans-serif;
 
-  /* animation */
+  /******************************************* animation */
   --animate-wiggle: wiggle 1s ease-in-out infinite;
   @keyframes wiggle {
     0%,
@@ -57,6 +57,7 @@
   }
 }
 
+/******************************************* core */
 * {
   box-sizing: border-box;
 }
