@@ -43,6 +43,17 @@
   --font-inter: 'Inter', sans-serif;
   --font-roboto: 'Roboto', sans-serif;
 
+  /* animation */
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
 }
 
 * {
@@ -60,34 +71,9 @@ body {
   color: var(--color-dark);
 }
 
-/* .wrapper {
-  box-sizing: border-box;
-  min-height: 100vh;
-
-  display: flex;
-  flex-direction: column;
+html {
+  scroll-behavior: smooth;
 }
-
-.page-header,
-.page-footer {
-  padding: 20px;
-
-  flex-grow: 0;
-  flex-shrink: 0;
-}
-
-.page-body {
-  padding: 20px;
-
-  flex-grow: 1;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-} */
 
 body {
   display: flex;

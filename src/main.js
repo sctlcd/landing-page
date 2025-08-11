@@ -68,7 +68,7 @@ document.querySelector('#app').innerHTML = `
           </div>
 
           <!-- CTA Button -->
-          <button href="#" class="inline-flex items-center rounded-full border md:border-2 border-primary-00 pl-7 md:text-sm pr-3 py-1 text-primary-00 transition hover:bg-neutral-20 z-0">
+          <button class="inline-flex items-center rounded-full border md:border-2 border-primary-00 pl-7 md:text-sm pr-3 py-1 text-primary-00 transition hover:bg-neutral-20 z-0">
             <span class="mr-1">Comprar ahora</span>
             <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" transform="rotate(-90)">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -157,8 +157,20 @@ document.querySelector('#app').innerHTML = `
   <!-- Main page content -->
   <main class="page-body">
     <div class="main-content">
+
+    <nav class="hidden">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#advantage">Benefits</a></li>
+        <li><a href="#accessory">Accessories</a></li>
+        <li><a href="#partner-program">Comparison</a></li>
+        <li><a href="#table">Contact</a></li>
+        <li><a href="#form">Contact</a></li>
+      </ul>
+    </nav>
+
       <!-- Hero -->
-      <section class="mb-24 max-w-7xl mx-auto px-24 py-24 grid md:grid-cols-2 gap-6 items-center">
+      <section id="hero" class="mb-24 max-w-7xl mx-auto px-24 py-24 grid md:grid-cols-2 gap-6 items-center">
         <div class="space-y-15">
           <h1 class="text-18/20 text-heading font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
           <div class="p-12 bg-gray-100 rounded">
@@ -204,13 +216,12 @@ document.querySelector('#app').innerHTML = `
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            </button>
           </div>
         </div>
       </section>
 
       <!-- Ventajas -->
-      <section class="mb-24 p-24">
+      <section id="advantage" class="mb-24 p-24">
         <div class="max-w-5xl mx-auto text-center">
           <!-- Title -->
           <h2 class="mb-24 font-medium text-12-5/15 text-primary-40-light">Ventajas</h2>
@@ -283,7 +294,7 @@ document.querySelector('#app').innerHTML = `
       </section>
     
       <!-- Accesorios -->
-      <section class="mb-24 py-24 pt-24 pb-36">
+      <section id="accessory" class="mb-24 py-24 pt-24 pb-36">
         <div class="text-center">
           <h2 class="mb-24 font-medium text-12-5/15 text-center text-primary-40-light">Accesorios</h2>
         </div>
@@ -362,14 +373,14 @@ document.querySelector('#app').innerHTML = `
       </section>
 
       <!-- Lorem ipsum passage -->
-      <section class="mb-24 mx-auto max-w-6xl px-24 py-12 text-center">
+      <section id="partner-program" class="mb-24 mx-auto max-w-6xl px-24 py-12 text-center">
         <h2 class="text-18/20 font-medium text-heading">Lorem Ipsum passage</h2>
         <p class="my-24 text-primary-40-light font-medium text-12-5/15 ">The standard used since the 1500s</p>
         <p class="font-normal text-2xl/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
  
       <!-- Tabla comparativa -->
-      <section class="mb-24 max-w-7xl py-24 px-4 mx-auto">
+      <section id="table" class="mb-24 max-w-7xl py-24 px-4 mx-auto">
         <!-- Heading -->
         <h2 class="text-center font-medium text-12-5/15 text-primary-40-light mb-24 mx-auto">
           Tabla comparativa
@@ -434,7 +445,7 @@ document.querySelector('#app').innerHTML = `
         </div>
       </section>
   
-      <section class="mx-auto my-24 max-w-5xl pt-24 px-4 pb-36">
+      <section id="form" class="mx-auto my-24 max-w-5xl pt-24 px-4 pb-36">
         <div class="my-6">
           <div class="rounded-xl bg-primary-light p-12 shadow-lg inset-shadow-xs">
             <h2 class="mb-6 text-lg font-bold text-primary-00">Formulario</h2>
@@ -444,42 +455,42 @@ document.querySelector('#app').innerHTML = `
               <!-- Nombre -->
               <div class="mb-3 md:mb-6 mr-0 md:mr-6">
                 <label for="nombre" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">Nombre<span>&#42;</span></label>
-                <input type="text" placeholder="Nombre" class="rounded-4xl border border-neutral-20 px-6 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+                <input id="nombre" type="text" placeholder="Nombre" class="rounded-4xl border border-neutral-20 px-6 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
               </div>
               
               <!-- Apellido -->
               <div class="mb-3 md:mb-6">
                 <label for="apellido" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">Apellido<span>&#42;</span></label>
-                <input type="text" placeholder="Apellido" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+                <input id="apellido" type="text" placeholder="Apellido" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
               </div>
 
               <!-- Email -->  
               <div class="mb-3 md:mb-6 mr-0 md:mr-6">
                 <label for="email" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">Email<span>&#42;</span></label>
-                <input type="email" placeholder="Email" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+                <input id="email" type="email" placeholder="Email" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
               </div>
 
               <!-- Empresa -->
               <div class="mb-3 md:mb-6">
                 <label for="empresa" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">Empresa<span>&#42;</span></label>
-                <input type="text" placeholder="Empresa" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+                <input id="empresa" type="text" placeholder="Empresa" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
               </div>
 
               <!-- Dirección -->
               <div class="mb-3 md:mb-6 mr-0 md:mr-6">
                 <label for="direccion" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">Dirección<span>&#42;</span></label>
-                <input type="text" placeholder="Dirección" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+                <input id="direccion" type="text" placeholder="Dirección" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
               </div>
               
               <!-- País -->
               <div class="mb-3 md:mb-6">
                 <label for="pais" class="block text-xs/4 font-regular font-inter mb-1 text-dark pl-4">País<span>&#42;</span></label>
-                <input type="text" placeholder="País" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:border-primary-10-light focus:outline-none w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
+                <input id="pais" type="text" placeholder="País" class="rounded-4xl border border-neutral-20 px-4 py-3 text-base/6 focus:ring-2 focus:text-primary-10-light focus:border-primary-10-light focus:outline-none w-full my-2 bg-neutral-00 placeholder-neutral-20" required />
               </div>
 
               <!-- Textarea -->
               <label for="partner-program" class="text-xs/4 font-regular font-inter text-dark pl-4 mb-1">Estoy interesado en el Partner Program<span>&#42;</span></label>
-              <textarea placeholder="Estoy interesado en el Partner Program" class="border border-neutral-20 rounded-3xl px-6 py-4  focus:outline-none focus:border-primary-10-light focus:ring-2 focus:text-primary-10-light md:col-span-2 resize-none h-32 w-full mt-2 mb-5 md:mb-8 bg-neutral-00 placeholder-neutral-20 font-normal text-base/6"></textarea>
+              <textarea id="partner-program" placeholder="Estoy interesado en el Partner Program" class="border border-neutral-20 rounded-3xl px-6 py-4  focus:outline-none focus:border-primary-10-light focus:ring-2 focus:text-primary-10-light md:col-span-2 resize-none h-32 w-full mt-2 mb-5 md:mb-8 bg-neutral-00 placeholder-neutral-20 font-normal text-base/6"></textarea>
 
               <!-- Checkbox -->
               <label class="flex items-start text-sm text-neutral-60 md:col-span-2 mb-3">
@@ -516,8 +527,8 @@ document.querySelector('#app').innerHTML = `
       <div class="space-y-4 text-center md:text-left">
         <h3 class="text-md font-bold text-secondary-90-light">Sobre nosotros</h3>
         <ul class="space-y-2">
-          <li><a href="#" class="text-sm underline text-secondary-60-light hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Acerca de Nosotros</a></li>
-          <li><a href="#" class="text-sm underline text-secondary-60-light hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Partner Program</a></li>
+          <li><a id="acerca-nosotros-link" href="#" class="text-sm underline text-secondary-60-light hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Acerca de Nosotros</a></li>
+          <li><a id="partner-program-link" href="#partner-program" class="text-sm underline text-secondary-60-light hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Partner Program</a></li>
         </ul>
       </div>
 
@@ -526,10 +537,10 @@ document.querySelector('#app').innerHTML = `
         <h3 class="text-md font-bold text-secondary-90-light">Software</h3>
         <a href="#" class="block text-sm underline text-secondary-60-light hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Aplicación móvil</a>
         <div class="flex flex-col gap-4 items-center justify-center md:items-start md:justify-start">
-          <a href="#">
+          <a href="https://www.apple.com/store" target="_blank" class="hover:animate-wiggle">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_(iOS).svg" alt="App Store" class="h-11" />
           </a>
-          <a href="#">
+          <a href="https://play.google.com/store/apps?hl=en" target="_blank" class="hover:animate-wiggle">
             <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-11" />
           </a>
         </div>
@@ -544,13 +555,15 @@ document.querySelector('#app').innerHTML = `
             <span class="font-bold text-2xl md:text-3xl lg:text-4xl text-secondary-90-light">Logo</span>
           </div>
         </div>
-        <div class="">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="30" viewBox="0 0 256 256" xml:space="preserve">
-            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(45.02412451361867 45.024124513618645) scale(1.83 1.83)">
-              <path d="M 1.48 29.91 h 18.657 v 60.01 H 1.48 V 29.91 z M 10.809 0.08 c 5.963 0 10.809 4.846 10.809 10.819 c 0 5.967 -4.846 10.813 -10.809 10.813 C 4.832 21.712 0 16.866 0 10.899 C 0 4.926 4.832 0.08 10.809 0.08" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-              <path d="M 31.835 29.91 h 17.89 v 8.206 h 0.255 c 2.49 -4.72 8.576 -9.692 17.647 -9.692 C 86.514 28.424 90 40.849 90 57.007 V 89.92 H 71.357 V 60.737 c 0 -6.961 -0.121 -15.912 -9.692 -15.912 c -9.706 0 -11.187 7.587 -11.187 15.412 V 89.92 H 31.835 V 29.91 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-            </g>
-          </svg>
+        <div>
+          <a href="https://es.linkedin.com/" target="_blank" class="hover:animate-ping">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="30" viewBox="0 0 256 256" xml:space="preserve">
+              <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(45.02412451361867 45.024124513618645) scale(1.83 1.83)">
+                <path d="M 1.48 29.91 h 18.657 v 60.01 H 1.48 V 29.91 z M 10.809 0.08 c 5.963 0 10.809 4.846 10.809 10.819 c 0 5.967 -4.846 10.813 -10.809 10.813 C 4.832 21.712 0 16.866 0 10.899 C 0 4.926 4.832 0.08 10.809 0.08" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                <path d="M 31.835 29.91 h 17.89 v 8.206 h 0.255 c 2.49 -4.72 8.576 -9.692 17.647 -9.692 C 86.514 28.424 90 40.849 90 57.007 V 89.92 H 71.357 V 60.737 c 0 -6.961 -0.121 -15.912 -9.692 -15.912 c -9.706 0 -11.187 7.587 -11.187 15.412 V 89.92 H 31.835 V 29.91 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+              </g>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -606,12 +619,11 @@ document.querySelector('#app').innerHTML = `
           <a href="#" class="block px-6 py-2 text-xs hover:bg-neutral-20">Portugués</a>
         </div>
       </div>
-
     </div>
   </footer>
 </div>
 `
-
+//****************************************************** Mobile  *************************************/
 // Mobile Menu toggle
 const openBtn = document.getElementById('openMenu');
 const closeBtn = document.getElementById('closeMenu');
@@ -666,21 +678,23 @@ document.addEventListener('click', (event) => {
   }
 });
 
+//****************************************************** Footer  *************************************/
 // Footer Language dropdown toggle onclick
-const btnDdpFooterLanguage = document.getElementById('dropdownBtnFooterLanguageMobile');
-const menuDdpFooterLanguage = document.getElementById('dropdownMenuFooterLanguageMobile');
+const btnDdpFooterLanguageMobile = document.getElementById('dropdownBtnFooterLanguageMobile');
+const menuDdpFooterLanguageMobile = document.getElementById('dropdownMenuFooterLanguageMobile');
 
-btnDdpFooterLanguage.addEventListener('click', () => {
-  menuDdpFooterLanguage.classList.toggle('hidden');
+btnDdpFooterLanguageMobile.addEventListener('click', () => {
+  menuDdpFooterLanguageMobile.classList.toggle('hidden');
 });
 
 // Close if clicked outside
 document.addEventListener('click', (event) => {
-  if (!btnDdpFooterLanguage.contains(event.target) && !menuDdpFooterLanguage.contains(event.target)) {
-    menuDdpFooterLanguage.classList.add('hidden');
+  if (!btnDdpFooterLanguageMobile.contains(event.target) && !menuDdpFooterLanguageMobile.contains(event.target)) {
+    menuDdpFooterLanguageMobile.classList.add('hidden');
   }
 });
 
+//****************************************************** Carousel  *************************************/
 // Carousel
 const carousel = document.getElementById('carousel');
 const slides = carousel.children;
@@ -700,3 +714,21 @@ document.getElementById('prev').addEventListener('click', () => {
 function updateCarousel() {
   carousel.style.transform = `translateX(-${index * 100}%)`;
 }
+
+//****************************************************** Partner program link *************************************/
+const partnerLink = document.getElementById('partner-program-link');
+const heroSection = document.getElementById('hero');
+const advantageSection = document.getElementById('advantage');
+const accessorySection = document.getElementById('accessory');
+const partnerSection = document.getElementById('partner-program');
+const tableSection = document.getElementById('table');
+const formSection = document.getElementById('form');
+
+// Close if clicked outside
+document.addEventListener('click', (event) => {
+  heroSection.classList.add('hidden');
+  formSection.classList.add('hidden');
+  advantageSection.classList.add('hidden');
+  accessorySection.classList.add('hidden');
+  tableSection.classList.add('hidden');
+});
