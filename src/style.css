@@ -7,12 +7,15 @@
   --color-primary-medium: #283f7e;
   --color-primary-light: #F9FAFC;
   --color-primary-00 : #22509B;
-  --color-primary-60-light: #ADB9D8;
-  --color-primary-40-light: #8495C5;
+  --color-primary-10-light: #4761A8;
   --color-primary-20-light: #5B72B1;
+  --color-primary-40-light: #8495C5;
+  --color-primary-60-light: #ADB9D8;
+  
   
   --color-secondary-60-light: #bde8fa;
   --color-secondary-90-light: #eff9fe;
+  --color-secondary-20-dark: #499EC2;
   
   --color-neutral-00:#FFFFFF ;
   --color-neutral-05: #f3f3f4;
