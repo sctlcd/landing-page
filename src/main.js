@@ -43,11 +43,13 @@ document.querySelector('#app').innerHTML = `
     <div class="px-4 sm:px-6 lg:px-12 2xl:px-16">
       <div class="flex h-23 items-center justify-between">
         <!-- Left: Logo -->
-        <div class="flex items-center space-x-2">
-          <!-- Icon (placeholder box) -->
-          <div class="h-7 w-5 md:h-8 md:w-6 lg:h-10 lg:w-7 rounded bg-logo-red"></div>
-          <span class="font-bold text-3xl md:text-4xl lg:text-5xl">Logo</span>
-        </div>
+        <a href="./" target="_blank"">
+          <div class="flex items-center space-x-2">
+            <!-- Icon (placeholder box) -->
+            <div class="h-7 w-5 md:h-8 md:w-6 lg:h-10 lg:w-7 rounded bg-logo-red"></div>
+            <span class="font-bold text-3xl md:text-4xl lg:text-5xl">Logo</span>
+          </div>
+        </a>
 
         <!-- Right: Links and actions -->
         <div class="hidden items-center space-x-5 md:flex">
@@ -68,7 +70,7 @@ document.querySelector('#app').innerHTML = `
           </div>
 
           <!-- CTA Button -->
-          <button class="inline-flex items-center rounded-full border md:border-2 border-primary-00 pl-7 md:text-sm pr-3 py-1 text-primary-00 transition hover:bg-neutral-20 z-0">
+          <button type="button" onclick="alert('To do')" class="inline-flex items-center rounded-full border md:border-2 border-primary-00 pl-7 md:text-sm pr-3 py-1 text-primary-00 transition hover:bg-neutral-20 z-0 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light">
             <span class="mr-1">Comprar ahora</span>
             <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" transform="rotate(-90)">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -78,7 +80,7 @@ document.querySelector('#app').innerHTML = `
 
         <!-- Mobile menu button -->
         <div class="md:hidden">
-          <button id="openMenu" class="">
+          <button id="openMenu">
             <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -147,27 +149,16 @@ document.querySelector('#app').innerHTML = `
 
       <!-- Comprar ahora (Mobile) -->
       <div>
-        <a href="#" class="mt-9 block rounded-full border-2 border-primary-00 px-4 pt-2 pb-3 text-center text-primary-00 transition hover:bg-neutral-20">
-      <span>Comprar ahora</span>
-      </a>
+        <button type="button" onclick="alert('To do')" class="mt-9 block rounded-full border-2 border-primary-00 px-4 pt-2 pb-2 text-center text-primary-00 transition hover:bg-neutral-20 focus:text-primary-10-light focus:outline-none focus:border-primary-10-light">
+          <span>Comprar ahora</span>
+      </button>
       </div>
     </nav>
   </div>
 
   <!-- Main page content -->
   <main class="page-body">
-    <div class="main-content">
-
-    <nav class="hidden">
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#advantage">Benefits</a></li>
-        <li><a href="#accessory">Accessories</a></li>
-        <li><a href="#partner-program">Comparison</a></li>
-        <li><a href="#table">Contact</a></li>
-        <li><a href="#form">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="main-content pt-24">
 
       <!-- Hero -->
       <section id="hero" class="mb-24 max-w-7xl mx-auto px-24 py-24 grid md:grid-cols-2 gap-6 items-center">
@@ -375,8 +366,30 @@ document.querySelector('#app').innerHTML = `
       <!-- Lorem ipsum passage -->
       <section id="partner-program" class="mb-24 mx-auto max-w-6xl px-24 py-12 text-center">
         <h2 class="text-18/20 font-medium text-heading">Lorem Ipsum passage</h2>
-        <p class="my-24 text-primary-40-light font-medium text-12-5/15 ">The standard used since the 1500s</p>
+        <p class="my-24 text-primary-40-light font-medium text-12-5/15">The standard used since the 1500s</p>
         <p class="font-normal text-2xl/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+
+      <!-- Acerca Nosotros Lorem ipsum -->
+      <section id="acerca-nosotros" class="hidden mb-24 mx-auto max-w-5xl pt-12 pb-36">
+        <!-- <h2 class="text-18/20 font-medium text-heading text-center">Lorem Ipsum</h2> -->
+        <p class="mb-24 px-6 text-primary-40-light font-medium text-12-5/15 text-center">Lorem Ipsum</p>
+        <li class="text-primary-20-light mb-10 mr-3 pt-2 text-left text-2xl/10">
+          <span class="text-neutral-80 text-2xl/10 font-bold">
+            Sed ut perspiciatis unde
+          </span>
+          <span class="text-neutral-80 text-2xl/10 font-normal">
+            ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          </span>
+        </li>
+        <li class="text-primary-20-light mr-3 pt-2 text-left text-2xl/10">
+          <span class="text-neutral-80 text-2xl/10 font-bold">
+            Sed ut perspiciatis unde
+          </span>
+          <span class="text-neutral-80 text-2xl/10 font-normal">
+            ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          </span>
+        </li>
       </section>
  
       <!-- Tabla comparativa -->
@@ -715,20 +728,33 @@ function updateCarousel() {
   carousel.style.transform = `translateX(-${index * 100}%)`;
 }
 
-//****************************************************** Partner program link *************************************/
+//****************************************************** Navigation links  *************************************/
 const partnerLink = document.getElementById('partner-program-link');
+const acercaLink = document.getElementById('acerca-nosotros-link');
 const heroSection = document.getElementById('hero');
 const advantageSection = document.getElementById('advantage');
 const accessorySection = document.getElementById('accessory');
-const partnerSection = document.getElementById('partner-program');
+const acercaSection = document.getElementById('acerca-nosotros');
 const tableSection = document.getElementById('table');
 const formSection = document.getElementById('form');
 
-// Close if clicked outside
-document.addEventListener('click', (event) => {
+// Partner program link
+partnerLink.addEventListener('click', (event) => {
   heroSection.classList.add('hidden');
   formSection.classList.add('hidden');
   advantageSection.classList.add('hidden');
   accessorySection.classList.add('hidden');
   tableSection.classList.add('hidden');
+  acercaSection.classList.add('hidden');
+  
+});
+
+// Acerca Nosotros link
+acercaLink.addEventListener('click', (event) => {
+  heroSection.classList.add('hidden');
+  formSection.classList.add('hidden');
+  advantageSection.classList.add('hidden');
+  accessorySection.classList.add('hidden');
+  tableSection.classList.add('hidden');
+  acercaSection.classList.remove('hidden');
 });
