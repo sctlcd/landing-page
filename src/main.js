@@ -516,15 +516,15 @@ document.querySelector('#app').innerHTML = `
       <div class="space-y-4 text-center md:text-left">
         <h3 class="text-md font-bold text-secondary-90-light">Sobre nosotros</h3>
         <ul class="space-y-2">
-          <li><a href="#" class="text-sm underline text-secondary-60-light hover:text-gray-300">Acerca de Nosotros</a></li>
-          <li><a href="#" class="text-sm underline text-secondary-60-light hover:text-gray-300">Partner Program</a></li>
+          <li><a href="#" class="text-sm underline text-secondary-60-light hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Acerca de Nosotros</a></li>
+          <li><a href="#" class="text-sm underline text-secondary-60-light hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Partner Program</a></li>
         </ul>
       </div>
 
       <!-- Column 2 -->
       <div class="space-y-4 text-center md:text-left">
         <h3 class="text-md font-bold text-secondary-90-light">Software</h3>
-        <a href="#" class="block text-sm underline text-secondaryh-60-light hover:text-gray-300">Aplicación móvil</a>
+        <a href="#" class="block text-sm underline text-secondary-60-light hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light">Aplicación móvil</a>
         <div class="flex flex-col gap-4 items-center justify-center md:items-start md:justify-start">
           <a href="#">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_(iOS).svg" alt="App Store" class="h-11" />
@@ -562,21 +562,21 @@ document.querySelector('#app').innerHTML = `
       <div>
         <div class="font-bold mb-3 md:mb-4 text-center md:text-left">© Copyright 2025</div>
         <div class="flex flex-col md:flex-row md:flex-wrap justify-center md:gap-y-1 md:gap-x-2 lg:gap-y-2 lg:gap-x-4 text-center">
-          <a href="#" class="hover:underline mb-3 md:mb-0">Política de privacidad</a>
+          <a href="#" class="hover:underline mb-3 md:mb-0 focus:outline-none focus:text-primary-10-light">Política de privacidad</a>
           <span class="hidden md:inline">|</span>
-          <a href="#" class="hover:underline mb-3 md:mb-0">Política de cookies</a>
+          <a href="#" class="hover:underline mb-3 md:mb-0 focus:outline-none focus:text-primary-10-light">Política de cookies</a>
           <span class="hidden md:inline">|</span>
-          <a href="#" class="hover:underline mb-3 md:mb-0">Configuración de cookies</a>
+          <a href="#" class="hover:underline mb-3 md:mb-0 focus:outline-none focus:text-primary-10-light">Configuración de cookies</a>
           <span class="hidden md:inline">|</span>
-          <a href="#" class="hover:underline md:mb-0">Aviso legal</a>
+          <a href="#" class="hover:underline md:mb-0 focus:outline-none focus:text-primary-10-light">Aviso legal</a>
         </div>
       </div>
 
       <!-- HOVER Footer Language selector - Dropdown Wrapper (Mobile) -->
       <div class="relative group z-10">
-        <button id="desktop-footer-language-selector" class="items-center pr-4 hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light focus:border-primary-10-light hidden md:flex">
-          Español
-          <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" transform="rotate(-180)">
+        <button id="desktop-footer-language-selector" class="items-center px-6 py-4 hover:text-secondary-20-dark focus:outline-none focus:text-primary-10-light focus:border-primary-10-light hidden md:flex">
+          <span class="mr-3">Español</span>
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" transform="rotate(-180)">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
@@ -599,11 +599,11 @@ document.querySelector('#app').innerHTML = `
         </button>
 
         <!-- Dropdown Menu (Opens Up) -->
-        <div id="dropdownMenuFooterLanguageMobile" class="absolute right-0 bottom-full mb-2 hidden w-28 rounded-xl bg-primary-dark py-3 opacity-100 shadow-md inset-shadow-xs transition-opacity group-hover:visible group-hover:opacity-100">
-          <a href="#" class="block px-6 py-2 text-xs hover:bg-gray-500">Español</a>
-          <a href="#" class="block px-6 py-2 text-xs hover:bg-gray-500">Inglés</a>
-          <a href="#" class="block px-6 py-2 text-xs hover:bg-gray-500">Francés</a>
-          <a href="#" class="block px-6 py-2 text-xs hover:bg-gray-500">Portugués</a>
+        <div id="dropdownMenuFooterLanguageMobile" class="absolute right-0 bottom-full mb-2 mr-[-22px] hidden w-28 rounded-xl bg-primary-light text-dark py-3 opacity-100 shadow-lg inset-shadow-sm inset-shadow-primary-dark transition-opacity group-hover:visible group-hover:opacity-100">
+          <a href="#" class="block px-6 py-2 text-xs hover:bg-neutral-20">Español</a>
+          <a href="#" class="block px-6 py-2 text-xs hover:bg-neutral-20">Inglés</a>
+          <a href="#" class="block px-6 py-2 text-xs hover:bg-neutral-20">Francés</a>
+          <a href="#" class="block px-6 py-2 text-xs hover:bg-neutral-20">Portugués</a>
         </div>
       </div>
 
