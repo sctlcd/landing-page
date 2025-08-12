@@ -1283,7 +1283,7 @@ document.querySelector('#app').innerHTML = `
                   class="hover:animate-wiggle"
                >
                   <img
-                     src="get_It_on_google_play_button_transparent-min-modified-min.png"
+                     src="./images/get_it_on_google_play_button-min-modified-min.png"
                      alt="Google Play"
                      class="h-11 w-32"
                   />
