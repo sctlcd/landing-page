@@ -1140,9 +1140,9 @@ document.querySelector('#app').innerHTML = `
             class="hover:animate-wiggle"
           >
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_(iOS).svg"
+              src="./images/Available On The App Store Apple Button -min-modified-min.png"
               alt="App Store"
-              class="h-11"
+              class="h-11 w-32"
             />
           </a>
           <a
@@ -1151,9 +1151,9 @@ document.querySelector('#app').innerHTML = `
             class="hover:animate-wiggle"
           >
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              src="./images/Get It On Google Play Button Transparent -min-modified-min.png"
               alt="Google Play"
-              class="h-11"
+              class="h-11 w-32"
             />
           </a>
         </div>
