@@ -859,7 +859,7 @@ document.querySelector('#app').innerHTML = `
          <!-- Acerca Nosotros Lorem ipsum -->
          <section
             id="acerca-nosotros"
-            class="hidden mb-24 mx-auto max-w-4xl pt-12 pb-36"
+            class="hidden mb-24 mx-auto max-w-4xl pt-12 pb-36 px-8 lg:px-1"
          >
             <!-- <h2 class="text-4xl md:text-6xl lg:text-18/20 font-medium text-heading text-center">Lorem Ipsum</h2> -->
             <p
@@ -868,15 +868,15 @@ document.querySelector('#app').innerHTML = `
                Lorem Ipsum
             </p>
             <li
-               class="text-primary-20-light mb-10 my-1 md:my-2 lg:my-0 pt-2 px-8 lg:px-0"
+               class="text-primary-20-light mb-10 pt-2 text-left text-lg md:text-xl lg:text-2xl/10 my-1 md:my-2 lg:my-0 px-8 lg:px-0"
             >
                <span
-                  class="text-neutral-80 font-bold text-left text-lg md:text-xl lg:text-2xl/10"
+                  class="text-neutral-80 font-bold"
                >
                   Sed ut perspiciatis unde
                </span>
                <span
-                  class="text-neutral-80 font-normal text-left text-lg md:text-xl lg:text-2xl/10"
+                  class="text-neutral-80 font-normal"
                >
                   ed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque laudantium, totam rem aperiam, eaque
@@ -885,7 +885,7 @@ document.querySelector('#app').innerHTML = `
                </span>
             </li>
             <li
-               class="text-primary-20-light mr-3 pt-2 text-left text-lg md:text-xl lg:text-2xl/10"
+               class="text-primary-20-light mr-3 pt-2 text-left text-lg md:text-xl lg:text-2xl/10 my-1 md:my-2 lg:my-0 px-8 lg:px-0"
             >
                <span class="text-neutral-80 font-bold">
                   Sed ut perspiciatis unde
